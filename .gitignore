@@ -1,0 +1,12 @@
+# Build directories
+build/
+.gradle/
+target/
+.idea/
+*.iml
+.DS_Store
+
+# Local outputs
+bronze_output/
+silver_output/
+gold_output/
