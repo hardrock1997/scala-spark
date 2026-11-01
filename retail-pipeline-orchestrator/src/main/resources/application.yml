@@ -1,0 +1,55 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: retail-pipeline-orchestrator
+  datasource:
+    url: jdbc:postgresql://localhost:5432/retail_db
+    username: postgres
+    password: secretpassword
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  cloud:
+    function:
+      definition: fileIngestedConsumer;bronzeCompletedConsumer;silverCompletedConsumer
+    stream:
+      bindings:
+        fileIngestedConsumer-in-0:
+          destination: retail.file.ingested.exchange
+          group: orchestrator-file-group
+        bronzeCompletedConsumer-in-0:
+          destination: retail.bronze.completed.exchange
+          group: orchestrator-bronze-group
+        silverCompletedConsumer-in-0:
+          destination: retail.silver.completed.exchange
+          group: orchestrator-silver-group
+
+        bronzeTriggerOut-out-0:
+          destination: retail.bronze.trigger.exchange
+        silverTriggerOut-out-0:
+          destination: retail.silver.trigger.exchange
+        goldTriggerOut-out-0:
+          destination: retail.gold.trigger.exchange
+
+      rabbit:
+        bindings:
+          fileIngestedConsumer-in-0:
+            consumer:
+              exchange-type: topic
+              binding-routing-key: '#'
+              queue-name: retail.file.ingested.queue
+        binder:
+          connection-string: amqp://guest:guest@localhost:5672
+
+logging:
+  level:
+    root: INFO
+    com.example.retail_pipeline_orchestrator: DEBUG
+    org.springframework.cloud.stream: INFO
+    org.springframework.amqp: DEBUG

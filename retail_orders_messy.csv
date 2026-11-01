@@ -1,0 +1,1001 @@
+order_id,order_date,customer_id,product_id,product_name,category,quantity,unit_price,discount,total_amount,payment_method,store_location,order_status
+O00001,21-09-2025,C0200,P207,Microwave Oven,Fashion,3,49627,,,,Bangalore,Cancelled
+O00002,01-01-2025,,P203,Sony Headphones,Electronics,-1,abc,0,,Credit Card,Mumbai,completed
+O00003,07/02/2025,C0812,P203,Sony Headphones,Home and Living,-1,65886,ten,,UPI,Pune,Cancelled
+O00004,2025-02-09,C0333,P201,iPhone 15,Electronic,2,abc,ten,,Cash,Pune,Returned
+O00005,2025-07-12,C0516,P204,Nike Shoes,Electronic,-1,50792,0.1,,UPI,Hyderabad,Returned
+O00006,2025/12/20,C0274,P204,Nike Shoes,Fashon,2,abc,,,Cash,Pune,Cancelled
+O00007,12/07/2025,C0235,P205,Levi Jeans,Home and Living,1,54528,0.05,,Cash,Hyderabad,Cancelled
+O00008,2025-07-20,C0236,P208,Refrigerator,electronics,3,abc,,,Debit Card,Lucknow,Cancelled
+O00009,16-11-2025,C0013,P205,Levi Jeans,Electronics,-1,19289,5%,,,Jaipur,Returned
+O00010,12-06-2025,,P203,Sony Headphones,Electronic,-1,abc,10%,,UPI,Delhi,Cancelled
+O00011,2025-12-16,C0717,P205,Levi Jeans,Home & Living,2,59673,0.05,,UPI,Jaipur,completed
+O00012,2025/07/23,C0759,P207,Microwave Oven,Home & Living,2,abc,0,,,Kolkata,Cancelled
+O00013,13-01-2025,C0071,P204,Nike Shoes,Home & Living,3,21219,0,,UPI,Jaipur,Returned
+O00014,2025/02/16,C0406,P202,Samsung TV,Electronics,3,54228,0,,Cash, ,Cancelled
+O00015,08-02-2025,C0518,P201,iPhone 15,electronics,2,abc,10%,,Cash,Pune,Returned
+O00016,2025/07/24,C0927,P205,Levi Jeans,Home and Living,3,abc,5%,,,Delhi,Returned
+O00017,16-10-2025,C0436,P204,Nike Shoes,electronics,3,9242,ten,,,Bangalore,Returned
+O00018,2025-05-18,C0177,P208,Refrigerator,Fashion,1,48863,0.05,,UPI,Mumbai,completed
+O00019,14-10-2025,C0261,P210,Air Conditioner,Home and Living,-1,abc,ten,,UPI,Pune,completed
+O00020,05-11-2025,C0979,P207,Microwave Oven,Electronics,2,27089,,,UPI,Hyderabad,Completed
+O00021,17/02/2025,C0269,P209,Office Chair,Electronic,2,9893,5%,,Debit Card, ,Completed
+O00022,2025-05-23,C0846,P207,Microwave Oven,Electronic,2,12818,ten,,,Mumbai,Completed
+O00023,19-05-2025,C0840,P209,Office Chair,Fashon,2,13306,0.1,,,Jaipur,Cancelled
+O00024,2025/03/15,C0371,P201,iPhone 15,Home & Living,3,abc,0.05,,Credit Card,Lucknow,completed
+O00025,2025/01/10,C0487,P201,iPhone 15,electronics,1,abc,0.1,,Credit Card,Kolkata,Completed
+O00026,22/02/2025,C0223,P209,Office Chair,Home & Living,1,75983,ten,,Credit Card,Lucknow,Completed
+O00027,2025-04-16,C0804,P206,HP Laptop,Home and Living,2,abc,0.05,,UPI,Pune,Completed
+O00028,13/01/2025,C0016,P203,Sony Headphones,electronics,3,abc,,,Cash,Delhi,Completed
+O00029,10/01/2025,C0667,P210,Air Conditioner,Fashon,-1,abc,0.05,,UPI,Pune,Returned
+O00030,2025-06-28,C0820,P205,Levi Jeans,Home and Living,2,abc,0.05,,Cash,Bangalore,Cancelled
+O00031,15-12-2025,C0329,P207,Microwave Oven,Home and Living,3,abc,10%,,Debit Card,Pune,Cancelled
+O00032,05/03/2025,C0611,P210,Air Conditioner,Fashon,-1,abc,0.05,,Cash, ,completed
+O00033,2025/08/16,C0550,P201,iPhone 15,Fashon,2,35779,ten,,Debit Card,Delhi,Completed
+O00034,2025/01/23,C0515,P203,Sony Headphones,Fashion,-1,abc,10%,,,Bangalore,Completed
+O00035,16-07-2025,C0262,P202,Samsung TV,Fashon,2,35631,,,Credit Card,Lucknow,completed
+O00036,2025-07-18,C0753,P208,Refrigerator,Fashon,3,48889,0,,Debit Card,Kolkata,Cancelled
+O00037,2025/02/03,C0638,P208,Refrigerator,Home and Living,2,abc,10%,,Credit Card,Mumbai,Completed
+O00038,13/08/2025,C0436,P205,Levi Jeans,Electronic,1,42926,0.1,,Debit Card,Bangalore,Completed
+O00039,01/02/2025,C0541,P202,Samsung TV,Fashion,1,62281,10%,,Debit Card,Chennai,Completed
+O00040,06/10/2025,C0159,P208,Refrigerator,Electronics,2,42853,0.05,,,Jaipur,Cancelled
+O00041,2025/11/18,C0783,P205,Levi Jeans,Electronic,2,17136,ten,,Cash,Hyderabad,Returned
+O00042,03/08/2025,C0063,P204,Nike Shoes,Home and Living,2,11479,10%,,,Delhi,completed
+O00043,18-02-2025,C0323,P201,iPhone 15,Fashion,3,69775,,,Debit Card,Lucknow,Cancelled
+O00044,2025/04/05,C0720,P205,Levi Jeans,Electronics,1,70667,,,UPI,Jaipur,completed
+O00045,2025-12-23,C0491,P204,Nike Shoes,Home & Living,3,40366,0.1,,Debit Card,Jaipur,completed
+O00046,02-06-2025,C0860,P206,HP Laptop,Home and Living,2,54033,,,UPI,Chennai,Completed
+O00047,2025/09/22,C0141,P201,iPhone 15,Fashion,1,57319,,,Credit Card,Pune,Cancelled
+O00048,26/05/2025,C0239,P203,Sony Headphones,Electronics,1,abc,ten,,,Chennai,Cancelled
+O00049,2025-04-28,,P204,Nike Shoes,electronics,-1,73578,,,Debit Card,Delhi,completed
+O00050,2025-04-22,C0747,,Office Chair,Home and Living,-1,abc,0.05,,Credit Card,Jaipur,completed
+O00051,07-08-2025,C0554,,HP Laptop,Fashion,2,65867,0,,Debit Card,Hyderabad,completed
+O00052,18-07-2025,C0391,,iPhone 15,electronics,-1,abc,10%,,Credit Card,Kolkata,Completed
+O00053,05/11/2025,C0180,P203,Sony Headphones,Fashion,1,61293,10%,,Credit Card,Hyderabad,completed
+O00054,17-08-2025,C0927,P203,Sony Headphones,Home & Living,2,1906,5%,,,Chennai,completed
+O00055,2025-04-21,C0571,P209,Office Chair,Fashion,-1,62434,ten,,,Pune,Completed
+O00056,2025/04/27,C0607,,Air Conditioner,Electronic,-1,abc,5%,,,Mumbai,Cancelled
+O00057,2025-01-25,C0534,P205,Levi Jeans,Fashion,1,abc,,,Credit Card,Chennai,completed
+O00058,2025-06-25,C0582,P207,Microwave Oven,Home and Living,3,abc,5%,,Debit Card,Delhi,completed
+O00059,2025/04/22,C0155,P207,Microwave Oven,Fashion,3,63687,10%,,Credit Card,Delhi,completed
+O00060,20/08/2025,C0662,P206,HP Laptop,Home & Living,1,12626,0,,UPI,Bangalore,completed
+O00061,2025-08-20,C0512,P203,Sony Headphones,Home & Living,3,33028,0,,UPI,Lucknow,Returned
+O00062,2025/04/20,,P208,Refrigerator,electronics,-1,14141,0.1,,Credit Card,Pune,Completed
+O00063,14-02-2025,C0161,P206,HP Laptop,Electronic,2,22488,ten,,Cash,Chennai,Cancelled
+O00064,18-02-2025,C0581,P203,Sony Headphones,Fashion,2,abc,0.05,,UPI,Jaipur,Returned
+O00065,2025/11/02,C0177,P204,Nike Shoes,Electronics,1,65077,0.1,,UPI,Bangalore,Cancelled
+O00066,2025-07-09,C0528,P204,Nike Shoes,Home & Living,-1,abc,0.05,,Debit Card,Hyderabad,completed
+O00067,2025/05/27,C0729,P203,Sony Headphones,Electronic,3,abc,0,,,Hyderabad,Cancelled
+O00068,2025-08-17,C0947,P209,Office Chair,Fashon,1,63791,ten,,Cash,Pune,Cancelled
+O00069,19/12/2025,C0150,P203,Sony Headphones,Electronics,1,abc,0,,Cash,Chennai,Completed
+O00070,2025-06-03,C0836,P210,Air Conditioner,Home and Living,2,28568,ten,,Debit Card,Delhi,Completed
+O00071,17-09-2025,C0190,P204,Nike Shoes,electronics,1,54067,ten,,,Jaipur,Cancelled
+O00072,2025/11/09,C0911,P201,iPhone 15,Home & Living,1,abc,0.1,,Debit Card,Jaipur,Returned
+O00073,17/10/2025,,P203,Sony Headphones,Home & Living,1,abc,0.05,,UPI,Hyderabad,Returned
+O00074,08/06/2025,C0535,P201,iPhone 15,Fashon,2,18481,5%,,UPI,Mumbai,Returned
+O00075,2025/05/07,C0445,P203,Sony Headphones,Electronic,2,abc,0.1,,,Delhi,Completed
+O00076,2025-05-09,C0047,P206,HP Laptop,electronics,3,52745,,,UPI,Hyderabad,Returned
+O00077,26/10/2025,C0521,P207,Microwave Oven,Electronic,2,61317,10%,,,Pune,Returned
+O00078,2025/04/22,C0612,P210,Air Conditioner,Home & Living,2,78822,5%,,Credit Card,Jaipur,completed
+O00079,2025-04-26,C0572,P202,Samsung TV,Electronic,2,34854,ten,,Cash,Delhi,completed
+O00080,2025/02/24,C0693,P204,Nike Shoes,Home and Living,2,abc,0,,Credit Card,Chennai,Cancelled
+O00081,2025/04/20,C0396,P204,Nike Shoes,Fashion,3,32032,0,,Cash,Lucknow,Completed
+O00082,2025-11-26,C0561,P201,iPhone 15,electronics,-1,21899,0.05,,Credit Card,Jaipur,Cancelled
+O00083,2025-04-13,C0303,P204,Nike Shoes,Home and Living,1,abc,0,,,Chennai,Cancelled
+O00084,2025/10/15,C0393,P201,iPhone 15,Fashon,1,45321,0.1,,Debit Card,Lucknow,completed
+O00085,20-05-2025,C0296,P204,Nike Shoes,Fashion,2,7125,5%,,Credit Card,Delhi,Returned
+O00086,2025-02-13,C0742,P204,Nike Shoes,Electronic,-1,abc,ten,,Credit Card,Lucknow,completed
+O00087,2025/02/07,C0567,P205,Levi Jeans,Electronic,1,3843,ten,,UPI,Pune,Returned
+O00088,2025/08/18,C0327,P207,Microwave Oven,Fashion,1,33946,,,Credit Card,Delhi,Returned
+O00089,09-04-2025,C0657,P208,Refrigerator,Electronic,-1,1017,0.05,,UPI,Jaipur,Completed
+O00090,16-11-2025,C0604,P208,Refrigerator,Fashon,1,abc,0,,UPI, ,Cancelled
+O00091,2025/07/13,C0049,P202,Samsung TV,Fashon,2,30878,0.1,,UPI,Chennai,Completed
+O00092,06-03-2025,C0283,P202,Samsung TV,electronics,-1,23962,0.05,,,Kolkata,Cancelled
+O00093,02-01-2025,C0770,P207,Microwave Oven,Electronic,-1,39448,0.1,,,Delhi,Completed
+O00094,2025/02/18,C0564,P208,Refrigerator,Home and Living,1,abc,,,Credit Card,Lucknow,Returned
+O00095,2025-02-24,C0200,P206,HP Laptop,Home & Living,3,65833,0,,Debit Card, ,Completed
+O00096,22-01-2025,C0419,P201,iPhone 15,Electronics,-1,78462,ten,,Debit Card,Pune,completed
+O00097,2025/02/11,C0603,P208,Refrigerator,Home and Living,3,2191,0,,Cash,Kolkata,completed
+O00098,08/07/2025,C0693,P207,Microwave Oven,electronics,-1,64343,0,,Debit Card,Jaipur,Completed
+O00099,2025/10/20,C0036,P203,Sony Headphones,Home and Living,1,abc,5%,,Cash, ,Cancelled
+O00100,05-04-2025,,P208,Refrigerator,Fashon,-1,abc,10%,,Credit Card,Bangalore,completed
+O00101,2025-04-06,C0018,P210,Air Conditioner,electronics,1,abc,0.1,,Debit Card,Kolkata,Cancelled
+O00102,20-09-2025,C0770,P210,Air Conditioner,Home and Living,-1,45839,,,Credit Card,Lucknow,completed
+O00103,2025/02/19,C0187,P206,HP Laptop,Fashon,-1,abc,0,,,Kolkata,Returned
+O00104,04/02/2025,,P206,HP Laptop,Home & Living,2,59007,5%,,Debit Card,Hyderabad,Returned
+O00105,2025-04-08,C0286,P204,Nike Shoes,Home & Living,-1,abc,ten,,Debit Card,Pune,Completed
+O00106,2025/03/08,C0976,P201,iPhone 15,Home & Living,3,10101,ten,,UPI,Pune,Cancelled
+O00107,2025/01/08,C0389,P203,Sony Headphones,Electronic,2,abc,0.05,,Cash,Pune,completed
+O00108,2025-10-28,C0077,P205,Levi Jeans,Electronics,3,17294,10%,,Credit Card,Mumbai,Cancelled
+O00109,08-04-2025,C0925,P206,HP Laptop,Electronics,1,abc,,,Cash,Hyderabad,Returned
+O00110,2025-07-23,C0447,P204,Nike Shoes,Home and Living,1,52556,10%,,,Chennai,Cancelled
+O00111,2025-03-24,C0919,P201,iPhone 15,Fashon,3,33224,ten,,UPI,Bangalore,completed
+O00112,2025/01/18,C0433,P202,Samsung TV,Electronics,2,abc,10%,,Credit Card,Chennai,Cancelled
+O00113,2025-11-16,C0076,P203,Sony Headphones,Fashon,-1,abc,10%,,Cash,Pune,Cancelled
+O00114,2025-06-01,,P204,Nike Shoes,electronics,2,57688,5%,,,Kolkata,Returned
+O00115,20/08/2025,C0939,P210,Air Conditioner,Electronics,2,20732,,,,Pune,Completed
+O00116,23-03-2025,C0889,P209,Office Chair,Home and Living,3,65587,10%,,UPI,Kolkata,Returned
+O00117,2025-03-26,C0093,P205,Levi Jeans,electronics,-1,62192,ten,,Credit Card,Chennai,Cancelled
+O00118,2025/04/11,C0914,P208,Refrigerator,Electronics,1,abc,ten,,Cash,Lucknow,Cancelled
+O00119,2025/05/08,C0231,P203,Sony Headphones,Electronic,-1,55285,10%,,UPI,Delhi,Cancelled
+O00120,2025-07-20,C0002,P204,Nike Shoes,Fashon,-1,67352,0,,Credit Card,Bangalore,Completed
+O00121,19/11/2025,C0555,P201,iPhone 15,Electronic,2,5426,,,,Jaipur,Completed
+O00122,23-08-2025,C0409,P204,Nike Shoes,Electronic,2,53665,0.05,,Credit Card,Mumbai,Returned
+O00123,2025/10/12,C0945,,Levi Jeans,electronics,1,63671,ten,,UPI,Pune,Returned
+O00124,2025-01-16,C0276,P203,Sony Headphones,Electronic,2,abc,,,UPI,Jaipur,completed
+O00125,2025-07-03,C0481,P201,iPhone 15,Home & Living,2,1452,10%,,UPI, ,Returned
+O00126,2025/06/08,,P203,Sony Headphones,Fashion,-1,abc,0.1,,UPI,Mumbai,Cancelled
+O00127,16/05/2025,C0377,P209,Office Chair,Electronics,1,32200,ten,,Cash,Chennai,Completed
+O00128,28/04/2025,C0779,P205,Levi Jeans,Home and Living,1,5528,0,,Cash,Hyderabad,completed
+O00129,12-07-2025,C0430,P208,Refrigerator,Home and Living,3,abc,0.05,,,Delhi,completed
+O00130,23/02/2025,C0302,P202,Samsung TV,Electronic,3,abc,,,Debit Card,Kolkata,Cancelled
+O00131,23-10-2025,C0387,P210,Air Conditioner,Home and Living,1,40876,5%,,Credit Card,Pune,completed
+O00132,2025/02/17,C0582,P201,iPhone 15,Electronic,-1,abc,ten,,Debit Card,Jaipur,completed
+O00133,10/03/2025,C0415,P202,Samsung TV,electronics,3,abc,5%,,Credit Card,Mumbai,Cancelled
+O00134,28/05/2025,C0622,P208,Refrigerator,Home and Living,2,5927,ten,,UPI,Chennai,Completed
+O00135,10/07/2025,C0016,P203,Sony Headphones,Fashon,2,39995,0,,,Chennai,Returned
+O00136,28-04-2025,C0553,,Sony Headphones,Electronic,1,18337,0.05,,UPI, ,Completed
+O00137,21/10/2025,C0569,P203,Sony Headphones,Fashon,-1,36422,0,,Credit Card,Chennai,Returned
+O00138,2025-09-16,C0651,P205,Levi Jeans,Electronic,3,abc,10%,,Cash, ,Cancelled
+O00139,01/04/2025,C0484,P201,iPhone 15,electronics,3,57928,10%,,,Bangalore,Completed
+O00140,25-02-2025,C0699,P206,HP Laptop,Electronic,3,49080,0.1,,Cash,Bangalore,Returned
+O00141,18-03-2025,C0497,P201,iPhone 15,Fashion,1,57102,ten,,Cash,Mumbai,Completed
+O00142,2025/09/25,C0075,P208,Refrigerator,Fashion,2,19051,ten,,UPI,Bangalore,Returned
+O00143,18/03/2025,C0380,P207,Microwave Oven,Home & Living,-1,1317,,,Cash,Mumbai,Cancelled
+O00144,11/01/2025,C0440,P205,Levi Jeans,electronics,2,57321,ten,,Credit Card,Lucknow,Cancelled
+O00145,27-09-2025,C0465,P209,Office Chair,Home and Living,-1,2807,5%,,Cash, ,Returned
+O00146,05/07/2025,C0584,P208,Refrigerator,Home and Living,-1,33127,0.05,,Cash,Kolkata,Cancelled
+O00147,05/08/2025,C0387,,Samsung TV,Home & Living,-1,26022,5%,,Credit Card,Hyderabad,completed
+O00148,2025/10/27,,P208,Refrigerator,Electronics,3,47770,0.05,,Debit Card, ,Cancelled
+O00149,2025-08-08,C0130,P208,Refrigerator,Fashion,-1,53892,0,,Credit Card,Lucknow,Completed
+O00150,04/12/2025,,P206,HP Laptop,Home & Living,-1,35389,0.05,,Credit Card,Mumbai,Cancelled
+O00151,20-11-2025,C0442,P205,Levi Jeans,electronics,1,10302,5%,,Debit Card,Mumbai,Returned
+O00152,05-07-2025,C0783,P207,Microwave Oven,Fashion,-1,abc,10%,,Debit Card,Lucknow,Cancelled
+O00153,2025-08-17,C0466,P202,Samsung TV,Home & Living,2,42295,5%,,UPI,Chennai,Returned
+O00154,2025-09-18,C0647,P210,Air Conditioner,Home and Living,3,77834,5%,,Credit Card, ,Completed
+O00155,2025/11/17,C0573,P210,Air Conditioner,Fashon,3,abc,0.1,,Cash,Hyderabad,completed
+O00156,2025-05-17,C0192,P203,Sony Headphones,Fashon,2,29519,0.1,,Debit Card,Kolkata,Cancelled
+O00157,2025-09-28,C0310,P205,Levi Jeans,Home & Living,1,75807,5%,,UPI,Lucknow,Cancelled
+O00158,07-01-2025,C0567,P201,iPhone 15,Home and Living,3,76276,,,UPI,Kolkata,Completed
+O00159,2025-05-04,C0780,,Microwave Oven,Electronics,-1,37411,10%,,UPI,Chennai,Cancelled
+O00160,2025/07/10,C0919,P206,HP Laptop,Home and Living,1,79401,10%,,Cash,Delhi,Completed
+O00161,16/06/2025,C0957,P209,Office Chair,electronics,-1,34775,5%,,,Kolkata,Returned
+O00162,14/04/2025,C0075,,Nike Shoes,Fashon,3,67333,0.05,,UPI,Kolkata,completed
+O00163,26/10/2025,C0370,P209,Office Chair,electronics,3,78237,0.05,,Cash,Chennai,Cancelled
+O00164,08/07/2025,C0322,P208,Refrigerator,Electronics,1,42286,5%,,,Jaipur,Cancelled
+O00165,2025/04/15,C0121,P203,Sony Headphones,Electronic,-1,2862,10%,,,Jaipur,Completed
+O00166,2025-07-15,C0468,P208,Refrigerator,Electronic,1,79278,0.1,,UPI,Lucknow,completed
+O00167,15/04/2025,C0093,P203,Sony Headphones,Electronic,1,28202,5%,,Cash,Hyderabad,completed
+O00168,08/01/2025,C0142,P206,HP Laptop,electronics,-1,abc,5%,,UPI,Lucknow,Cancelled
+O00169,12-05-2025,C0395,P209,Office Chair,Electronic,2,58215,0.05,,Debit Card,Delhi,Returned
+O00170,2025-08-13,C0803,P202,Samsung TV,Home and Living,2,abc,0.1,,, ,Returned
+O00171,2025/10/10,C0555,P203,Sony Headphones,Electronic,3,abc,5%,,UPI,Mumbai,Returned
+O00172,2025-01-28,C0855,P203,Sony Headphones,Home and Living,2,78395,0,,Debit Card,Lucknow,Completed
+O00173,11/06/2025,C0149,P206,HP Laptop,electronics,1,abc,ten,,UPI,Chennai,Returned
+O00174,06-09-2025,C0624,P210,Air Conditioner,Fashion,2,18139,0.05,,UPI,Hyderabad,Cancelled
+O00175,2025/03/24,C0413,P201,iPhone 15,Fashion,3,abc,10%,,UPI,Lucknow,Completed
+O00176,17/01/2025,C0447,P210,Air Conditioner,electronics,2,77771,ten,,UPI,Lucknow,Completed
+O00177,2025-01-15,C0167,P206,HP Laptop,Home and Living,-1,70948,ten,,Debit Card,Kolkata,Completed
+O00178,2025/10/15,C0966,P207,Microwave Oven,Fashon,3,10781,0.05,,Cash,Jaipur,Returned
+O00179,12-05-2025,C0525,P207,Microwave Oven,Fashion,3,14674,0.1,,,Delhi,Completed
+O00180,2025-08-25,C0461,P209,Office Chair,Electronics,3,abc,10%,,,Pune,Cancelled
+O00181,02-09-2025,C0725,P205,Levi Jeans,Home and Living,1,abc,0.1,,UPI,Mumbai,completed
+O00182,2025-07-11,C0936,P205,Levi Jeans,Home and Living,-1,30881,0,,,Mumbai,Returned
+O00183,05/03/2025,C0739,P209,Office Chair,Electronics,2,abc,0.05,,Credit Card,Kolkata,Cancelled
+O00184,2025/10/13,C0273,P203,Sony Headphones,Home and Living,2,abc,ten,,Credit Card,Delhi,Returned
+O00185,02-04-2025,C0108,P204,Nike Shoes,Fashion,3,abc,10%,,Debit Card,Kolkata,Returned
+O00186,05/01/2025,C0355,P208,Refrigerator,Home and Living,3,58270,0.1,,Debit Card,Chennai,Cancelled
+O00187,2025-10-07,C0382,P204,Nike Shoes,Electronic,-1,22410,5%,,Cash,Delhi,Returned
+O00188,2025/07/18,C0856,P204,Nike Shoes,electronics,3,abc,0,,Cash,Jaipur,Completed
+O00189,03/01/2025,,P208,Refrigerator,Fashion,2,abc,5%,,,Jaipur,Cancelled
+O00190,2025-05-24,C0518,P210,Air Conditioner,Fashon,-1,70606,ten,,Debit Card,Kolkata,completed
+O00191,15/04/2025,C0866,P202,Samsung TV,Electronics,3,40870,ten,,Credit Card,Bangalore,Returned
+O00192,2025-02-03,C0130,P203,Sony Headphones,electronics,-1,40344,0.1,,Credit Card,Pune,Completed
+O00193,2025/10/24,C0376,P202,Samsung TV,electronics,1,abc,0,,Debit Card,Hyderabad,Completed
+O00194,2025/05/19,C0001,P203,Sony Headphones,Home & Living,2,22183,ten,,Credit Card,Hyderabad,Returned
+O00195,2025/09/05,C0019,P202,Samsung TV,Home and Living,3,abc,,,UPI,Delhi,Completed
+O00196,27-04-2025,C0051,P202,Samsung TV,Home and Living,3,67062,5%,,Debit Card,Bangalore,Cancelled
+O00197,2025/08/09,C0409,P201,iPhone 15,Electronic,3,9416,10%,,Credit Card,Lucknow,Returned
+O00198,2025-08-24,C0722,P202,Samsung TV,Fashon,2,66691,10%,,UPI,Chennai,completed
+O00199,2025/10/10,C0420,P209,Office Chair,Electronics,-1,17877,10%,,,Bangalore,Returned
+O00200,18/03/2025,C0055,P208,Refrigerator,Home and Living,2,abc,5%,,Credit Card,Bangalore,Cancelled
+O00201,15/04/2025,C0217,P209,Office Chair,Electronic,-1,72570,,,Credit Card,Lucknow,Completed
+O00202,2025/12/18,C0286,P201,iPhone 15,Fashion,1,8577,,,Credit Card,Lucknow,Completed
+O00203,2025-12-13,C0482,P204,Nike Shoes,Fashion,3,abc,5%,,Cash,Hyderabad,Cancelled
+O00204,03/05/2025,C0516,P206,HP Laptop,electronics,-1,39027,,,,Kolkata,completed
+O00205,16-10-2025,C0574,P209,Office Chair,Home and Living,2,abc,0.1,,Cash,Lucknow,Completed
+O00206,2025-01-14,C0909,P207,Microwave Oven,Electronic,2,51386,10%,,Debit Card,Delhi,Returned
+O00207,2025-03-14,C0807,P210,Air Conditioner,Fashon,-1,27205,,,Credit Card,Delhi,Returned
+O00208,12-06-2025,C0060,P201,iPhone 15,Fashon,3,34478,,,,Pune,Completed
+O00209,2025-04-16,C0533,P202,Samsung TV,Electronics,1,49506,0.05,,Cash,Bangalore,Cancelled
+O00210,2025-10-07,C0935,P208,Refrigerator,electronics,1,62281,ten,,UPI,Chennai,Cancelled
+O00211,10/04/2025,C0188,,iPhone 15,Home and Living,1,76360,10%,,Cash,Chennai,Cancelled
+O00212,2025/06/06,C0269,P208,Refrigerator,Electronics,3,36522,0,,Debit Card,Kolkata,Returned
+O00213,04-02-2025,C0247,P205,Levi Jeans,Fashion,2,43541,0.1,,Debit Card,Lucknow,Completed
+O00214,01/12/2025,C0430,P201,iPhone 15,Electronics,3,59172,0.1,,UPI,Chennai,Completed
+O00215,03/08/2025,C0965,P204,Nike Shoes,Electronic,3,75366,0,,Credit Card,Bangalore,Cancelled
+O00216,16/01/2025,C0947,P210,Air Conditioner,electronics,-1,51701,0.1,,UPI,Hyderabad,Returned
+O00217,2025/03/10,C0791,P203,Sony Headphones,electronics,3,abc,10%,,Cash,Chennai,Completed
+O00218,19-11-2025,C0494,P206,HP Laptop,electronics,2,32646,0.1,,Cash,Mumbai,Returned
+O00219,2025/03/10,C0806,P202,Samsung TV,Fashon,1,59297,0.1,,Debit Card,Hyderabad,Completed
+O00220,19-01-2025,C0576,P210,Air Conditioner,Fashion,-1,abc,10%,,UPI,Bangalore,Cancelled
+O00221,01/10/2025,C0772,P210,Air Conditioner,Home and Living,3,16640,ten,,,Jaipur,Cancelled
+O00222,2025-07-27,C0094,P210,Air Conditioner,Home & Living,2,abc,0.05,,Cash,Delhi,Completed
+O00223,2025/05/19,C0381,P205,Levi Jeans,Electronic,3,76226,,,Cash,Chennai,completed
+O00224,10/10/2025,C0626,P206,HP Laptop,Home and Living,1,55680,0.05,,Debit Card, ,completed
+O00225,2025/08/20,C0475,P203,Sony Headphones,Home & Living,1,abc,10%,,Cash,Lucknow,Completed
+O00226,25-11-2025,C0112,P210,Air Conditioner,Home and Living,2,1971,0.05,,Cash,Jaipur,Completed
+O00227,2025/10/08,C0673,P206,HP Laptop,Electronics,-1,abc,5%,,Cash,Lucknow,Completed
+O00228,2025/07/28,C0191,P202,Samsung TV,Fashion,1,abc,0,,Cash,Delhi,completed
+O00229,2025-12-16,C0766,P208,Refrigerator,Fashon,3,59932,0.1,,UPI,Lucknow,Cancelled
+O00230,2025/09/10,C0762,P202,Samsung TV,Fashon,-1,54261,10%,,Credit Card,Bangalore,Cancelled
+O00231,26/07/2025,C0970,P203,Sony Headphones,Home & Living,1,44325,0.05,,UPI,Kolkata,Cancelled
+O00232,11/11/2025,C0813,P203,Sony Headphones,Fashion,3,69516,0,,Cash,Pune,Cancelled
+O00233,05/08/2025,C0841,P203,Sony Headphones,Electronic,-1,43267,10%,,Cash,Bangalore,completed
+O00234,02-02-2025,C0205,P208,Refrigerator,Fashon,-1,abc,10%,,,Lucknow,completed
+O00235,15/02/2025,,P207,Microwave Oven,electronics,1,65688,0.1,,Cash,Mumbai,completed
+O00236,2025/12/03,C0830,P205,Levi Jeans,Home and Living,3,23563,,,Credit Card,Lucknow,Returned
+O00237,11/12/2025,C0322,P204,Nike Shoes,electronics,2,abc,5%,,UPI,Jaipur,Cancelled
+O00238,14-07-2025,C0005,P204,Nike Shoes,Fashion,-1,1749,ten,,Debit Card, ,Cancelled
+O00239,2025-12-07,C0263,,Office Chair,Home and Living,3,abc,0.05,,,Lucknow,Cancelled
+O00240,2025-06-06,C0850,P208,Refrigerator,Home & Living,3,59511,10%,,, ,Completed
+O00241,03-06-2025,C0089,P203,Sony Headphones,Home and Living,2,abc,ten,,Credit Card,Jaipur,Returned
+O00242,13/05/2025,C0588,P203,Sony Headphones,electronics,-1,55385,10%,,Debit Card,Kolkata,Completed
+O00243,2025-08-22,C0576,P201,iPhone 15,Home and Living,1,18405,10%,,UPI,Pune,Returned
+O00244,2025/08/05,C0716,P206,HP Laptop,electronics,-1,abc,5%,,Debit Card,Delhi,completed
+O00245,11/11/2025,C0831,P205,Levi Jeans,Fashion,-1,abc,10%,,,Lucknow,Cancelled
+O00246,2025-03-09,C0817,P203,Sony Headphones,Home and Living,1,abc,,,UPI,Jaipur,Cancelled
+O00247,11/08/2025,C0480,P203,Sony Headphones,Fashion,-1,34469,ten,,,Jaipur,Returned
+O00248,2025-03-08,C0569,P202,Samsung TV,Fashion,3,abc,0.05,,Credit Card,Delhi,Completed
+O00249,24/04/2025,C0886,P207,Microwave Oven,Fashon,-1,abc,5%,,Credit Card,Pune,completed
+O00250,25-01-2025,C0353,P203,Sony Headphones,Electronic,3,40654,0.1,,Debit Card,Pune,Cancelled
+O00251,2025/12/11,C0264,P207,Microwave Oven,electronics,-1,abc,,,Debit Card,Bangalore,Completed
+O00252,2025-01-04,C0484,P206,HP Laptop,Electronic,-1,78165,5%,,,Jaipur,Completed
+O00253,2025/04/05,C0424,P205,Levi Jeans,Fashion,2,39811,ten,,,Delhi,Completed
+O00254,13/09/2025,C0091,P210,Air Conditioner,Electronic,-1,abc,,,Credit Card,Kolkata,completed
+O00255,26-12-2025,C0813,P207,Microwave Oven,Electronic,2,27439,5%,,Debit Card, ,Completed
+O00256,2025/12/19,C0948,P204,Nike Shoes,Fashion,-1,abc,0.05,,UPI,Delhi,completed
+O00257,2025/01/10,C0486,P204,Nike Shoes,Fashon,1,71046,0.1,,Cash,Lucknow,completed
+O00258,19-07-2025,C0319,P201,iPhone 15,Electronic,3,3226,10%,,,Delhi,Completed
+O00259,15/07/2025,C0085,P209,Office Chair,Home and Living,3,31589,0.1,,Credit Card,Chennai,Completed
+O00260,2025-10-08,C0790,P204,Nike Shoes,Electronics,1,62597,10%,,Cash,Mumbai,Completed
+O00261,21-05-2025,C0073,P204,Nike Shoes,Fashion,3,9326,5%,,Debit Card, ,Returned
+O00262,2025/11/19,,P205,Levi Jeans,Electronic,1,33132,0.05,,,Hyderabad,Returned
+O00263,01/05/2025,C0158,P205,Levi Jeans,electronics,1,6974,0.1,,UPI,Hyderabad,Cancelled
+O00264,2025-04-27,C0575,P205,Levi Jeans,Fashion,2,40098,,,UPI, ,Returned
+O00265,2025-07-01,C0413,,Refrigerator,Home and Living,-1,36098,0.1,,,Chennai,Completed
+O00266,2025/02/26,C0188,P201,iPhone 15,electronics,-1,abc,0.1,,Cash,Hyderabad,completed
+O00267,2025/01/17,C0914,P205,Levi Jeans,Home and Living,2,abc,0,,Debit Card,Kolkata,Returned
+O00268,19/08/2025,C0995,P209,Office Chair,Home & Living,1,8964,0.1,,UPI,Pune,completed
+O00269,28/02/2025,C0810,P209,Office Chair,Fashion,1,abc,ten,,Credit Card,Lucknow,Returned
+O00270,2025/09/24,C0449,,Refrigerator,Electronics,3,44618,,,,Mumbai,Returned
+O00271,21/09/2025,C0783,P209,Office Chair,Home & Living,3,71851,10%,,UPI, ,Completed
+O00272,14-11-2025,C0248,P210,Air Conditioner,Home and Living,1,71080,0,,UPI,Delhi,completed
+O00273,2025-11-08,C0941,P210,Air Conditioner,Fashon,-1,abc,ten,,Debit Card,Bangalore,Cancelled
+O00274,2025/02/05,C0543,P206,HP Laptop,Fashion,-1,37435,10%,,Credit Card,Chennai,completed
+O00275,2025/11/10,C0883,P201,iPhone 15,Home & Living,1,28864,10%,,Credit Card,Pune,Returned
+O00276,14/03/2025,C0559,P205,Levi Jeans,Home & Living,3,abc,0.1,,Cash,Bangalore,completed
+O00277,2025/06/04,C0764,P208,Refrigerator,Electronic,2,77530,0.1,,Credit Card,Pune,completed
+O00278,23-09-2025,C0199,P201,iPhone 15,Fashon,3,9678,,,Cash,Lucknow,Returned
+O00279,28-03-2025,C0225,P203,Sony Headphones,Electronic,-1,63341,0.05,,UPI,Hyderabad,Completed
+O00280,2025/04/03,C0258,P201,iPhone 15,Fashion,-1,76478,10%,,Credit Card, ,Returned
+O00281,2025-02-25,C0954,P206,HP Laptop,electronics,1,18685,0,,UPI,Chennai,Cancelled
+O00282,2025-02-17,C0200,P210,Air Conditioner,electronics,3,45123,ten,,UPI,Chennai,completed
+O00283,2025/08/22,C0991,P207,Microwave Oven,Fashon,1,73776,,,Debit Card,Jaipur,Completed
+O00284,26-06-2025,C0820,P209,Office Chair,Electronics,2,abc,0.1,,Credit Card,Kolkata,Completed
+O00285,13/03/2025,C0944,P206,HP Laptop,Electronic,2,abc,ten,,,Hyderabad,Completed
+O00286,01-12-2025,C0930,P202,Samsung TV,Home and Living,-1,36428,5%,,Credit Card,Hyderabad,Cancelled
+O00287,2025/03/05,C0871,,Air Conditioner,Fashon,3,40167,0.1,,Debit Card,Jaipur,Returned
+O00288,27/09/2025,C0937,P206,HP Laptop,Fashion,-1,abc,0.05,,UPI,Hyderabad,Returned
+O00289,12-11-2025,C0049,P204,Nike Shoes,electronics,2,abc,10%,,,Bangalore,Cancelled
+O00290,2025-07-26,C0055,P208,Refrigerator,Home and Living,2,abc,0.05,,Debit Card,Kolkata,completed
+O00291,2025-09-25,C0455,P208,Refrigerator,Electronic,1,50498,,,Debit Card,Chennai,Returned
+O00292,2025-03-07,C0722,P205,Levi Jeans,Home and Living,-1,65506,0.1,,,Jaipur,Returned
+O00293,2025-12-08,C0369,P210,Air Conditioner,electronics,-1,abc,ten,,Credit Card,Delhi,completed
+O00294,2025/07/11,C0344,P203,Sony Headphones,Electronics,-1,2856,5%,,UPI,Pune,Completed
+O00295,2025-01-02,C0373,P207,Microwave Oven,Home and Living,2,66308,5%,,Credit Card,Chennai,Returned
+O00296,2025/01/19,C0164,P207,Microwave Oven,electronics,1,30199,0.1,,Debit Card,Jaipur,Returned
+O00297,2025/11/12,C0188,P204,Nike Shoes,Home & Living,-1,3469,0,,Cash,Chennai,Returned
+O00298,27-12-2025,C0010,P203,Sony Headphones,Fashion,-1,77608,ten,,Cash,Kolkata,Completed
+O00299,03/08/2025,C0554,P210,Air Conditioner,Home & Living,1,72893,ten,,Cash, ,Completed
+O00300,17-10-2025,C0924,P206,HP Laptop,Fashon,2,abc,0.05,,Credit Card,Lucknow,completed
+O00301,2025/08/16,C0110,P207,Microwave Oven,Fashion,2,57648,5%,,Cash,Pune,Cancelled
+O00302,26-10-2025,,P204,Nike Shoes,Electronic,2,abc,0.1,,,Kolkata,Cancelled
+O00303,2025-04-10,C0317,P205,Levi Jeans,Fashon,-1,33895,0.05,,UPI,Mumbai,completed
+O00304,28-01-2025,C0683,P203,Sony Headphones,Electronics,-1,abc,5%,,Cash,Kolkata,Returned
+O00305,22/05/2025,C0105,P208,Refrigerator,Fashon,-1,6805,10%,,Cash,Jaipur,Cancelled
+O00306,2025/07/05,C0103,P208,Refrigerator,electronics,3,12799,0.1,,Debit Card, ,Returned
+O00307,2025/07/03,C0103,P208,Refrigerator,electronics,1,70526,ten,,UPI,Jaipur,completed
+O00308,2025/08/10,C0520,P206,HP Laptop,Home and Living,1,19338,0.1,,Cash,Bangalore,Completed
+O00309,2025/01/01,C0098,P203,Sony Headphones,Home and Living,-1,abc,,,Debit Card, ,Returned
+O00310,23-03-2025,C0704,P203,Sony Headphones,Fashion,-1,abc,0.1,,Cash,Kolkata,Cancelled
+O00311,20-09-2025,,P206,HP Laptop,Home & Living,3,3301,0.05,,,Bangalore,Completed
+O00312,2025/02/04,C0303,P210,Air Conditioner,Electronics,2,41917,10%,,Cash, ,Cancelled
+O00313,04/06/2025,C0456,P203,Sony Headphones,Fashion,3,abc,0.05,,, ,Cancelled
+O00314,26-10-2025,C0056,P201,iPhone 15,Fashon,1,abc,5%,,Debit Card,Kolkata,Returned
+O00315,2025/01/09,C0182,P207,Microwave Oven,Fashion,-1,58674,5%,,Debit Card, ,Completed
+O00316,2025/12/18,C0025,P202,Samsung TV,Fashon,-1,62756,ten,,Credit Card, ,Cancelled
+O00317,13-02-2025,C0636,P207,Microwave Oven,Electronics,2,abc,,,Credit Card,Pune,Completed
+O00318,2025/07/03,C0240,P206,HP Laptop,Electronics,-1,48523,0.1,,UPI,Mumbai,Returned
+O00319,02/12/2025,C0942,P209,Office Chair,Home and Living,2,15900,0.05,,Cash,Hyderabad,completed
+O00320,19-02-2025,C0716,P202,Samsung TV,electronics,3,9741,10%,,UPI,Hyderabad,Completed
+O00321,2025-08-02,C0699,P203,Sony Headphones,Electronic,2,56752,0,,Credit Card,Chennai,completed
+O00322,18-07-2025,C0001,P210,Air Conditioner,Fashion,-1,69508,0.1,,Cash,Kolkata,Completed
+O00323,19/03/2025,C0683,P203,Sony Headphones,Fashion,-1,27406,ten,,Credit Card,Chennai,Cancelled
+O00324,06/06/2025,C0449,P201,iPhone 15,Fashion,1,abc,0.1,,Credit Card,Chennai,Completed
+O00325,26-11-2025,C0804,P206,HP Laptop,electronics,3,17926,5%,,Debit Card,Bangalore,Returned
+O00326,24/04/2025,C0580,P210,Air Conditioner,Fashon,3,42943,5%,,UPI,Jaipur,Returned
+O00327,27/12/2025,C0986,P203,Sony Headphones,Electronic,1,69157,ten,,Credit Card,Lucknow,Cancelled
+O00328,2025/01/22,C0162,P203,Sony Headphones,Fashion,3,68410,0.1,,UPI,Mumbai,Completed
+O00329,18/08/2025,C0778,P210,Air Conditioner,Home & Living,2,37235,5%,,,Lucknow,completed
+O00330,2025-07-07,C0942,P205,Levi Jeans,Fashion,2,abc,,,Credit Card,Mumbai,Cancelled
+O00331,2025/09/10,C0328,P202,Samsung TV,Home & Living,1,33072,,,Cash,Jaipur,Cancelled
+O00332,2025-07-19,C0220,P202,Samsung TV,Fashon,-1,29807,0.05,,Cash,Chennai,completed
+O00333,08-05-2025,C0953,P206,HP Laptop,Fashon,1,abc,5%,,Cash,Jaipur,Cancelled
+O00334,2025-05-21,C0900,P207,Microwave Oven,Fashion,3,5080,0.1,,Cash, ,completed
+O00335,13/02/2025,C0818,P204,Nike Shoes,Electronic,-1,48263,0.1,,Cash,Jaipur,completed
+O00336,05/12/2025,C0703,P201,iPhone 15,Home and Living,1,50380,,,,Chennai,Cancelled
+O00337,08/11/2025,C0451,P203,Sony Headphones,Home and Living,-1,37693,10%,,Cash,Pune,Completed
+O00338,08-04-2025,C0633,P210,Air Conditioner,Home & Living,-1,abc,,,,Lucknow,Completed
+O00339,13/11/2025,C0449,P206,HP Laptop,Fashon,1,63988,0.05,,,Chennai,Cancelled
+O00340,04-05-2025,C0979,P206,HP Laptop,electronics,-1,abc,0.1,,,Kolkata,Completed
+O00341,04-12-2025,C0103,P210,Air Conditioner,Fashon,-1,13931,0.05,,Credit Card,Delhi,Cancelled
+O00342,11/02/2025,C0722,P207,Microwave Oven,Home & Living,2,59124,,,Cash,Mumbai,completed
+O00343,05-03-2025,C0133,P204,Nike Shoes,Electronics,2,abc,0.1,,,Lucknow,completed
+O00344,2025-06-14,C0564,,Microwave Oven,Fashion,1,abc,ten,,UPI,Delhi,Cancelled
+O00345,22/08/2025,,P204,Nike Shoes,Fashion,1,78379,0.1,,,Chennai,Returned
+O00346,2025/04/13,C0761,P208,Refrigerator,Fashion,-1,abc,ten,,Cash,Lucknow,Completed
+O00347,28/11/2025,C0375,,Sony Headphones,Home & Living,2,12331,0.05,,Cash,Delhi,Completed
+O00348,2025-08-09,C0936,,Microwave Oven,Fashon,1,70419,10%,,Debit Card,Chennai,completed
+O00349,2025-05-01,C0770,P203,Sony Headphones,electronics,-1,12839,ten,,,Hyderabad,Cancelled
+O00350,02-03-2025,C0050,P210,Air Conditioner,Electronics,2,66621,,,Cash, ,Cancelled
+O00351,10/09/2025,,P205,Levi Jeans,Fashon,2,abc,,,Credit Card,Kolkata,completed
+O00352,10/02/2025,C0981,P203,Sony Headphones,Fashon,1,51001,10%,,,Mumbai,Returned
+O00353,2025-05-06,C0222,P201,iPhone 15,Electronics,2,45549,0.05,,Credit Card,Mumbai,Returned
+O00354,26-08-2025,C0792,P207,Microwave Oven,Fashion,-1,55305,0.1,,Debit Card,Kolkata,completed
+O00355,10/06/2025,C0209,,Microwave Oven,Home & Living,1,78820,0.1,,Debit Card,Hyderabad,completed
+O00356,2025/04/23,C0593,P202,Samsung TV,Electronics,2,56103,0.05,,Cash,Lucknow,completed
+O00357,09/07/2025,C0285,P206,HP Laptop,Home and Living,-1,31876,5%,,Debit Card,Chennai,Cancelled
+O00358,15/04/2025,C0961,P205,Levi Jeans,Fashion,3,abc,0.05,,,Lucknow,completed
+O00359,2025-04-21,,P210,Air Conditioner,Electronics,2,29844,0,,, ,Returned
+O00360,18/04/2025,C0047,P209,Office Chair,Electronic,2,16603,ten,,Credit Card,Bangalore,Completed
+O00361,2025/05/24,C0716,P201,iPhone 15,Fashion,-1,66875,0.05,,, ,Returned
+O00362,2025/12/04,C0292,P209,Office Chair,Home & Living,1,4535,0.05,,Cash,Lucknow,completed
+O00363,13-12-2025,C0556,P206,HP Laptop,Home & Living,-1,23447,ten,,,Delhi,Completed
+O00364,04/10/2025,C0629,P202,Samsung TV,Electronic,1,abc,0.1,,Credit Card,Kolkata,completed
+O00365,26/05/2025,C0979,P204,Nike Shoes,Home and Living,-1,76131,0,,Cash,Jaipur,Returned
+O00366,16-11-2025,C0670,P204,Nike Shoes,electronics,3,abc,0.1,,Debit Card,Jaipur,Returned
+O00367,2025-01-11,C0631,,Samsung TV,Electronics,3,57152,0.1,,Credit Card,Chennai,Completed
+O00368,16/01/2025,C0179,P204,Nike Shoes,Electronics,2,abc,10%,,UPI,Chennai,Completed
+O00369,2025/02/24,C0368,P209,Office Chair,Fashion,-1,abc,ten,,UPI, ,Completed
+O00370,2025/05/23,C0769,P201,iPhone 15,Electronics,3,72061,0.1,,UPI,Delhi,Returned
+O00371,2025/11/13,C0383,P201,iPhone 15,Home & Living,2,59723,5%,,Cash,Jaipur,completed
+O00372,16/07/2025,C0349,P205,Levi Jeans,Fashon,1,abc,ten,,Credit Card, ,Completed
+O00373,2025/06/02,C0371,,Air Conditioner,Fashon,2,37774,5%,,UPI, ,Cancelled
+O00374,25/08/2025,C0035,P209,Office Chair,Electronic,2,59540,0.05,,UPI, ,completed
+O00375,2025-08-08,C0987,P204,Nike Shoes,Home & Living,1,35011,ten,,Credit Card,Pune,Cancelled
+O00376,03-12-2025,C0964,P203,Sony Headphones,electronics,2,abc,0.05,,,Lucknow,completed
+O00377,14-04-2025,C0660,P202,Samsung TV,Home and Living,3,56144,0.05,,Cash,Jaipur,Completed
+O00378,14-08-2025,,P202,Samsung TV,electronics,3,42140,0.05,,,Hyderabad,Completed
+O00379,2025-11-18,C0966,P203,Sony Headphones,Home and Living,1,abc,0,,Cash,Pune,Returned
+O00380,24/04/2025,C0845,P203,Sony Headphones,Fashon,1,72387,0.05,,Credit Card,Chennai,Completed
+O00381,04-06-2025,C0076,P202,Samsung TV,electronics,3,6215,0.1,,Credit Card,Delhi,Returned
+O00382,2025-01-19,C0735,P203,Sony Headphones,Electronic,3,28542,0,,UPI,Pune,Cancelled
+O00383,2025-05-21,C0270,P202,Samsung TV,electronics,-1,9691,ten,,,Kolkata,Completed
+O00384,11/02/2025,,P206,HP Laptop,Home and Living,-1,9493,0,,Cash,Chennai,Cancelled
+O00385,2025/02/26,C0248,P205,Levi Jeans,Electronic,1,abc,10%,,Debit Card,Lucknow,Cancelled
+O00386,2025/01/16,C0513,P209,Office Chair,Home & Living,-1,74115,5%,,,Kolkata,Returned
+O00387,25-11-2025,C0697,P202,Samsung TV,Electronics,2,49443,0.05,,Debit Card,Mumbai,Returned
+O00388,2025-04-26,C0912,P206,HP Laptop,Home and Living,1,52197,5%,,UPI,Delhi,Cancelled
+O00389,03/02/2025,C0679,P209,Office Chair,Electronics,3,abc,0.1,,Debit Card,Hyderabad,Cancelled
+O00390,2025/01/14,C0869,P203,Sony Headphones,Home and Living,-1,28537,0.1,,UPI,Chennai,Completed
+O00391,18/08/2025,C0595,P207,Microwave Oven,Fashon,2,73154,,,Cash,Lucknow,Completed
+O00392,04-12-2025,C0384,P209,Office Chair,Fashion,1,54873,10%,,Debit Card,Delhi,Cancelled
+O00393,06/04/2025,C0022,,Microwave Oven,Fashon,3,abc,5%,,Credit Card,Delhi,completed
+O00394,02/12/2025,,P209,Office Chair,Electronics,3,abc,0,,Cash,Lucknow,Completed
+O00395,07/04/2025,C0387,P208,Refrigerator,Fashion,2,abc,0,,Cash,Chennai,Cancelled
+O00396,2025-08-02,C0867,P207,Microwave Oven,Home & Living,3,abc,0,,Cash,Delhi,Returned
+O00397,05-10-2025,C0336,P205,Levi Jeans,Electronic,2,11390,10%,,Debit Card,Chennai,Cancelled
+O00398,24/12/2025,,P201,iPhone 15,electronics,3,abc,0,,,Kolkata,completed
+O00399,2025/11/25,C0357,P202,Samsung TV,Electronics,2,15257,5%,,Credit Card, ,Returned
+O00400,23-03-2025,C0075,P210,Air Conditioner,Home and Living,1,abc,0.05,,Credit Card,Jaipur,Returned
+O00401,13-08-2025,C0389,P202,Samsung TV,Fashion,2,79987,ten,,Cash,Mumbai,Cancelled
+O00402,02/06/2025,C0134,P209,Office Chair,Fashion,1,abc,0,,,Bangalore,Completed
+O00403,03/02/2025,C0189,P206,HP Laptop,electronics,-1,12562,10%,,UPI, ,completed
+O00404,2025-02-05,C0471,P205,Levi Jeans,Home and Living,1,72673,10%,,UPI,Pune,completed
+O00405,08/07/2025,C0189,P209,Office Chair,Electronic,-1,abc,ten,,Credit Card,Pune,Returned
+O00406,2025/12/17,C0643,P209,Office Chair,electronics,-1,71781,10%,,,Bangalore,Completed
+O00407,27/03/2025,C0970,,iPhone 15,Fashon,1,51720,0.05,,UPI, ,Cancelled
+O00408,2025-07-06,C0798,P207,Microwave Oven,Home & Living,-1,13883,0,,,Pune,Returned
+O00409,09/06/2025,C0809,P205,Levi Jeans,Home & Living,-1,18539,5%,,,Delhi,Returned
+O00410,2025/04/13,C0339,P205,Levi Jeans,Home & Living,3,4480,ten,,Debit Card,Kolkata,completed
+O00411,15-09-2025,C0072,P203,Sony Headphones,electronics,2,65022,ten,,Credit Card,Hyderabad,completed
+O00412,05-12-2025,,P201,iPhone 15,Fashion,1,abc,,,Cash, ,Completed
+O00413,23-12-2025,C0586,P201,iPhone 15,Fashion,3,79117,0.1,,,Mumbai,Cancelled
+O00414,21/07/2025,,P207,Microwave Oven,Electronic,1,abc,0.1,,,Bangalore,completed
+O00415,06/09/2025,C0432,,Sony Headphones,Home & Living,1,abc,0.05,,Cash,Mumbai,completed
+O00416,02-04-2025,C0048,P210,Air Conditioner,Fashion,-1,18295,10%,,Debit Card,Jaipur,Cancelled
+O00417,18-09-2025,C0006,P209,Office Chair,Electronics,3,abc,,,Credit Card,Mumbai,completed
+O00418,18-09-2025,C0983,P208,Refrigerator,Electronics,2,78264,,,UPI,Jaipur,Returned
+O00419,11/05/2025,C0936,P208,Refrigerator,Fashion,1,51806,10%,,,Delhi,Returned
+O00420,2025-01-14,C0260,P209,Office Chair,Fashion,3,31273,0,,Credit Card,Mumbai,Cancelled
+O00421,26/03/2025,C0156,,Refrigerator,Home & Living,1,abc,,,UPI,Lucknow,Returned
+O00422,2025-09-05,C0120,P204,Nike Shoes,electronics,2,68027,0.1,,UPI,Delhi,Returned
+O00423,24-07-2025,C0403,P206,HP Laptop,electronics,-1,58233,0.1,,Debit Card, ,Returned
+O00424,2025/08/06,C0814,P209,Office Chair,electronics,1,60522,0,,Cash, ,Completed
+O00425,02-01-2025,C0950,P206,HP Laptop,Fashon,1,32799,0.1,,Cash,Jaipur,Completed
+O00426,23-11-2025,,P207,Microwave Oven,Fashion,-1,6798,0.05,,UPI,Chennai,Returned
+O00427,11/02/2025,C0343,P207,Microwave Oven,Home and Living,1,43978,5%,,UPI,Hyderabad,Returned
+O00428,23/02/2025,C0946,,Levi Jeans,Electronic,2,55233,0,,UPI,Kolkata,Returned
+O00429,2025/02/15,C0343,P207,Microwave Oven,Electronics,-1,30528,0,,UPI,Bangalore,Cancelled
+O00430,24-11-2025,C0577,P205,Levi Jeans,Home & Living,3,26035,5%,,Cash,Delhi,Returned
+O00431,2025-06-11,C0557,P202,Samsung TV,Home and Living,1,abc,5%,,, ,Completed
+O00432,2025/09/21,C0878,P210,Air Conditioner,Electronic,-1,2739,,,UPI,Hyderabad,completed
+O00433,06-05-2025,C0191,P207,Microwave Oven,Fashon,1,58967,ten,,UPI,Hyderabad,Cancelled
+O00434,2025-10-22,C0608,P203,Sony Headphones,Home and Living,2,abc,,,UPI,Mumbai,completed
+O00435,17-08-2025,C0790,P204,Nike Shoes,Home and Living,1,abc,0.05,,Credit Card,Mumbai,Cancelled
+O00436,2025/03/27,C0172,P205,Levi Jeans,Electronics,1,abc,10%,,,Chennai,completed
+O00437,2025-06-13,C0237,P203,Sony Headphones,electronics,1,29576,10%,,,Kolkata,completed
+O00438,2025-09-14,C0247,,Samsung TV,Fashon,-1,abc,5%,,Credit Card,Bangalore,completed
+O00439,20-01-2025,C0824,P210,Air Conditioner,Home and Living,2,abc,10%,,UPI,Chennai,completed
+O00440,09/11/2025,C0817,P203,Sony Headphones,Fashon,-1,42719,5%,,Credit Card, ,Completed
+O00441,2025/06/21,,P207,Microwave Oven,Fashion,2,5290,0,,UPI,Hyderabad,completed
+O00442,2025/06/24,C0469,P203,Sony Headphones,Fashon,2,13270,10%,,,Mumbai,Cancelled
+O00443,13-07-2025,C0534,P203,Sony Headphones,Home and Living,-1,30182,,,,Jaipur,Cancelled
+O00444,2025/07/05,C0262,P202,Samsung TV,Fashion,2,37720,0.1,,Debit Card,Chennai,Returned
+O00445,12-06-2025,C0475,P204,Nike Shoes,Home & Living,3,abc,5%,,Cash,Bangalore,completed
+O00446,27/05/2025,C0712,P203,Sony Headphones,Home and Living,3,abc,0.05,,Cash,Kolkata,Cancelled
+O00447,02-12-2025,C0002,,iPhone 15,Fashon,3,71437,,,UPI,Lucknow,Cancelled
+O00448,14/01/2025,C0118,P205,Levi Jeans,Fashion,1,abc,0,,Credit Card,Hyderabad,Cancelled
+O00449,2025-07-20,C0353,P202,Samsung TV,Home & Living,1,41811,0.05,,UPI,Chennai,completed
+O00450,25/01/2025,C0232,P201,iPhone 15,Fashon,-1,abc,ten,,UPI,Hyderabad,Cancelled
+O00451,2025/02/02,C0564,P205,Levi Jeans,Fashon,2,7737,10%,,Credit Card,Delhi,Returned
+O00452,2025-02-28,,P203,Sony Headphones,Electronic,3,14422,,,,Lucknow,Completed
+O00453,04-09-2025,C0718,P210,Air Conditioner,Home & Living,2,30729,10%,,Credit Card,Pune,Returned
+O00454,2025/11/24,C0102,P205,Levi Jeans,Fashon,-1,43297,0.1,,Credit Card,Chennai,Cancelled
+O00455,2025-09-16,C0623,P209,Office Chair,Fashon,3,27011,0,,UPI,Jaipur,Returned
+O00456,2025-09-07,C0176,P204,Nike Shoes,Home & Living,1,59191,ten,,UPI,Lucknow,Completed
+O00457,21-09-2025,C0929,P202,Samsung TV,Fashon,1,abc,0,,UPI,Delhi,completed
+O00458,08/05/2025,C0805,P205,Levi Jeans,Fashion,-1,52582,0.05,,UPI, ,Cancelled
+O00459,2025-03-23,C0587,P208,Refrigerator,Electronic,1,70968,0.05,,, ,Cancelled
+O00460,2025/12/06,C0741,P209,Office Chair,Electronic,-1,5911,0,,,Bangalore,Cancelled
+O00461,06-05-2025,,P210,Air Conditioner,Home and Living,1,58397,5%,,Cash,Mumbai,Returned
+O00462,25/07/2025,C0097,P202,Samsung TV,Electronic,-1,60026,5%,,,Bangalore,completed
+O00463,2025-12-24,C0792,P202,Samsung TV,Home and Living,1,71480,5%,,Credit Card,Chennai,Cancelled
+O00464,2025/02/10,C0448,P208,Refrigerator,Fashion,2,abc,5%,,UPI,Delhi,completed
+O00465,28-08-2025,C0381,P210,Air Conditioner,Home and Living,-1,31424,0,,UPI,Jaipur,Cancelled
+O00466,2025-05-21,C0564,P208,Refrigerator,electronics,-1,40656,5%,,Cash,Bangalore,Completed
+O00467,2025/06/25,C0603,P203,Sony Headphones,Home & Living,-1,35997,10%,,UPI,Mumbai,Completed
+O00468,2025-01-06,C0583,P207,Microwave Oven,Fashion,2,68158,0.05,,Debit Card,Delhi,Cancelled
+O00469,2025/12/22,C0707,P210,Air Conditioner,Fashion,1,abc,10%,,Credit Card,Chennai,completed
+O00470,22/09/2025,C0172,P210,Air Conditioner,Electronics,1,63000,0.1,,Credit Card,Mumbai,Returned
+O00471,28-04-2025,C0097,P210,Air Conditioner,Electronic,2,39462,0,,,Lucknow,completed
+O00472,2025/08/13,C0530,P210,Air Conditioner,Fashion,1,abc,5%,,,Delhi,completed
+O00473,2025/05/28,,P205,Levi Jeans,Electronic,2,31395,0,,,Pune,Cancelled
+O00474,24-04-2025,C0792,P210,Air Conditioner,Fashion,1,56477,,,, ,Completed
+O00475,18/04/2025,C0243,P209,Office Chair,Fashon,-1,57003,5%,,Cash,Delhi,Completed
+O00476,24/06/2025,C0784,P202,Samsung TV,Electronic,1,3837,0.05,,UPI,Pune,completed
+O00477,27-10-2025,C0619,P203,Sony Headphones,Home and Living,2,abc,0.1,,Debit Card,Kolkata,completed
+O00478,10-01-2025,C0069,P209,Office Chair,electronics,-1,abc,0.05,,, ,Cancelled
+O00479,07/04/2025,C0385,P204,Nike Shoes,Fashon,2,abc,,,,Lucknow,Cancelled
+O00480,2025/06/07,C0159,P202,Samsung TV,Electronics,3,abc,ten,,Credit Card,Jaipur,Returned
+O00481,2025-12-04,C0596,P209,Office Chair,Electronics,3,abc,0.1,,Debit Card,Mumbai,Cancelled
+O00482,26-03-2025,C0177,P201,iPhone 15,electronics,3,28303,ten,,, ,completed
+O00483,2025-02-23,C0283,P201,iPhone 15,Electronic,2,47539,0.05,,,Pune,Cancelled
+O00484,26-12-2025,C0904,P204,Nike Shoes,electronics,3,66302,,,Cash, ,Cancelled
+O00485,07/10/2025,C0055,P207,Microwave Oven,electronics,-1,21993,0,,Credit Card,Lucknow,Completed
+O00486,22/11/2025,C0527,P207,Microwave Oven,Home and Living,2,20307,0,,Debit Card,Bangalore,Cancelled
+O00487,2025-04-05,C0740,P207,Microwave Oven,Electronics,3,31608,10%,,Debit Card,Mumbai,completed
+O00488,2025-04-02,C0167,P201,iPhone 15,Fashion,3,abc,5%,,, ,Cancelled
+O00489,03-12-2025,,P203,Sony Headphones,Electronics,-1,74342,ten,,UPI,Jaipur,Completed
+O00490,13-06-2025,C0219,P201,iPhone 15,Electronics,1,28312,0.05,,UPI,Kolkata,completed
+O00491,2025-09-28,C0550,P201,iPhone 15,Fashon,1,18918,5%,,UPI,Hyderabad,completed
+O00492,06/01/2025,C0949,P201,iPhone 15,Electronic,2,12629,0,,Credit Card,Bangalore,completed
+O00493,19-01-2025,C0235,P206,HP Laptop,electronics,1,abc,0.05,,UPI,Pune,Returned
+O00494,04/07/2025,C0969,P204,Nike Shoes,Fashon,3,40885,,,Debit Card,Jaipur,Completed
+O00495,2025-04-23,C0259,P203,Sony Headphones,Electronic,2,30723,0,,, ,Completed
+O00496,2025-08-21,C0286,P209,Office Chair,Home and Living,3,abc,ten,,UPI, ,Returned
+O00497,10-12-2025,C0286,P206,HP Laptop,Fashion,2,abc,0.05,,UPI,Hyderabad,Cancelled
+O00498,20/01/2025,C0749,P204,Nike Shoes,Electronics,3,49869,0.1,,Debit Card,Chennai,Returned
+O00499,2025/06/20,C0768,,Office Chair,Electronic,2,abc,0.1,,Cash,Kolkata,Completed
+O00500,2025/01/03,C0766,P207,Microwave Oven,Fashon,-1,abc,0.1,,,Kolkata,Completed
+O00501,2025/02/28,C0432,P204,Nike Shoes,Electronics,1,71456,0.05,,Credit Card,Delhi,completed
+O00502,10/09/2025,C0980,P202,Samsung TV,Home and Living,1,abc,0,,,Mumbai,Returned
+O00503,2025-07-17,C0617,P201,iPhone 15,Home and Living,2,51995,0.05,,Debit Card,Chennai,Completed
+O00504,19/01/2025,C0718,P206,HP Laptop,Fashon,2,abc,5%,,,Lucknow,Completed
+O00505,06/04/2025,,P201,iPhone 15,Fashon,-1,28171,5%,,Cash,Lucknow,Cancelled
+O00506,20/10/2025,C0643,,HP Laptop,Electronic,3,abc,0,,Debit Card,Jaipur,completed
+O00507,2025/04/15,C0131,P203,Sony Headphones,Fashon,2,62727,ten,,Cash,Chennai,Returned
+O00508,14-06-2025,,P205,Levi Jeans,Home & Living,1,51957,0,,Cash,Chennai,Returned
+O00509,2025/05/02,C0052,P204,Nike Shoes,Fashion,2,abc,5%,,Debit Card,Delhi,Cancelled
+O00510,2025-09-18,C0732,P209,Office Chair,Electronics,3,abc,0.05,,Cash,Delhi,Returned
+O00511,21-06-2025,C0225,P204,Nike Shoes,Home and Living,-1,76012,5%,,UPI, ,Returned
+O00512,2025-04-16,C0134,P209,Office Chair,Electronics,-1,38150,0,,Cash,Kolkata,Cancelled
+O00513,26-07-2025,C0510,P201,iPhone 15,Electronic,1,64839,,,UPI,Delhi,Returned
+O00514,24/02/2025,C0953,P206,HP Laptop,Electronic,2,abc,5%,,Debit Card,Lucknow,Cancelled
+O00515,02/01/2025,C0897,P209,Office Chair,electronics,-1,16060,0,,UPI,Kolkata,Returned
+O00516,2025/09/07,C0382,P203,Sony Headphones,Fashon,-1,58927,5%,,,Pune,completed
+O00517,20-07-2025,C0043,P207,Microwave Oven,Home & Living,1,abc,0.1,,,Kolkata,completed
+O00518,2025-07-05,C0778,P210,Air Conditioner,Fashion,2,abc,10%,,Credit Card,Hyderabad,completed
+O00519,24/06/2025,C0096,P203,Sony Headphones,electronics,3,abc,0.1,,,Chennai,Completed
+O00520,25/03/2025,C0908,P210,Air Conditioner,Fashion,2,abc,0.1,,Cash,Kolkata,Cancelled
+O00521,12-06-2025,,P210,Air Conditioner,Home and Living,-1,13326,0.1,,Credit Card,Delhi,completed
+O00522,18/09/2025,C0202,P201,iPhone 15,Electronic,3,73327,0.1,,,Bangalore,Completed
+O00523,2025-10-04,,P201,iPhone 15,Electronic,2,abc,0,,Debit Card,Pune,Completed
+O00524,25/07/2025,C0059,P208,Refrigerator,Fashion,3,38575,5%,,UPI,Hyderabad,Completed
+O00525,2025/09/27,C0813,P207,Microwave Oven,Electronics,1,13960,0.05,,Debit Card,Bangalore,Cancelled
+O00526,02-12-2025,C0958,P209,Office Chair,Electronic,3,abc,ten,,Cash,Hyderabad,Completed
+O00527,18-05-2025,C0468,P207,Microwave Oven,Home and Living,3,36842,10%,,,Hyderabad,Returned
+O00528,2025/04/11,C0408,P203,Sony Headphones,Electronic,2,51672,ten,,,Hyderabad,Returned
+O00529,28/08/2025,C0099,P208,Refrigerator,Fashion,-1,8677,0.1,,UPI,Bangalore,Cancelled
+O00530,07/01/2025,C0230,P207,Microwave Oven,Fashion,3,34442,0.05,,Cash,Chennai,Completed
+O00531,24-10-2025,C0073,P204,Nike Shoes,Home and Living,1,27659,,,Cash, ,Completed
+O00532,2025/02/22,C0668,P204,Nike Shoes,Electronic,-1,59949,0.1,,Debit Card,Jaipur,Cancelled
+O00533,23-12-2025,C0613,P203,Sony Headphones,Fashon,3,abc,5%,,,Delhi,Returned
+O00534,12-09-2025,C0700,P209,Office Chair,Home and Living,3,17837,,,UPI,Pune,completed
+O00535,19/05/2025,C0703,P204,Nike Shoes,Electronic,1,17433,0,,Cash,Lucknow,Returned
+O00536,2025/12/15,C0076,P209,Office Chair,Fashion,2,38829,ten,,Cash,Delhi,Cancelled
+O00537,2025-07-25,C0388,P210,Air Conditioner,Fashon,-1,32636,0,,Debit Card,Hyderabad,completed
+O00538,2025-11-10,C0042,P207,Microwave Oven,Fashion,3,4758,10%,,Cash,Delhi,completed
+O00539,10/09/2025,C0163,P204,Nike Shoes,Home and Living,2,56673,0,,Cash,Lucknow,completed
+O00540,13/10/2025,C0979,P204,Nike Shoes,Electronic,1,46597,ten,,,Mumbai,Completed
+O00541,19-06-2025,C0123,P208,Refrigerator,electronics,3,4875,10%,,Credit Card,Bangalore,Cancelled
+O00542,2025/01/25,C0030,P207,Microwave Oven,Home & Living,-1,77695,5%,,Debit Card,Pune,Cancelled
+O00543,07-03-2025,C0863,P202,Samsung TV,Electronic,-1,25532,0.1,,Debit Card,Chennai,Cancelled
+O00544,10/04/2025,C0555,P209,Office Chair,Electronic,2,abc,5%,,,Jaipur,Cancelled
+O00545,19-07-2025,C0069,P206,HP Laptop,electronics,3,55475,0.05,,Credit Card,Chennai,completed
+O00546,23-10-2025,C0402,P202,Samsung TV,Electronics,3,61251,0.05,,,Bangalore,Completed
+O00547,13-03-2025,C0582,P209,Office Chair,Fashon,-1,abc,10%,,UPI,Bangalore,Cancelled
+O00548,2025-07-01,C0890,P207,Microwave Oven,Fashon,-1,55458,,,,Bangalore,Returned
+O00549,2025/12/07,C0122,P203,Sony Headphones,Fashon,2,11218,0.1,,UPI,Hyderabad,Returned
+O00550,20/09/2025,C0015,,Microwave Oven,Fashion,2,abc,ten,,Debit Card,Bangalore,completed
+O00551,2025/11/22,C0376,P208,Refrigerator,Home and Living,2,52662,10%,,UPI,Jaipur,Completed
+O00552,05-09-2025,C0907,P202,Samsung TV,Fashion,2,37422,0.1,,Cash,Bangalore,completed
+O00553,2025-01-12,C0862,P204,Nike Shoes,Fashon,-1,abc,0.05,,Credit Card,Hyderabad,completed
+O00554,2025-03-23,C0993,P207,Microwave Oven,electronics,1,5203,0.05,,Cash,Pune,Cancelled
+O00555,18/01/2025,C0472,P209,Office Chair,electronics,-1,abc,0.05,,Credit Card,Hyderabad,completed
+O00556,2025/10/25,C0899,P205,Levi Jeans,Fashion,-1,17777,0,,,Bangalore,Returned
+O00557,2025/07/22,C0393,P202,Samsung TV,Electronics,-1,abc,0.1,,Credit Card,Delhi,completed
+O00558,2025-09-13,C0404,P201,iPhone 15,Fashon,-1,29859,5%,,Cash,Mumbai,Returned
+O00559,21-07-2025,C0087,P202,Samsung TV,Home and Living,3,abc,,,Cash,Pune,Completed
+O00560,2025-01-18,C0824,P204,Nike Shoes,Electronic,1,6192,10%,,Cash, ,Cancelled
+O00561,22/02/2025,C0371,P203,Sony Headphones,Home and Living,2,abc,,,Credit Card,Bangalore,Returned
+O00562,2025/09/11,C0596,P209,Office Chair,Home and Living,3,58372,0.1,,Debit Card,Kolkata,completed
+O00563,27/05/2025,C0782,P203,Sony Headphones,Fashion,3,73578,ten,,Cash,Lucknow,Cancelled
+O00564,18/07/2025,C0308,P204,Nike Shoes,Fashon,-1,abc,,,Cash,Mumbai,Completed
+O00565,2025/10/26,C0452,P204,Nike Shoes,Electronics,2,47934,ten,,,Chennai,Completed
+O00566,02-11-2025,C0401,P210,Air Conditioner,electronics,2,3116,ten,,UPI,Chennai,Returned
+O00567,25/08/2025,C0702,P203,Sony Headphones,Home and Living,1,abc,0,,Cash,Jaipur,Cancelled
+O00568,2025-01-22,C0789,P202,Samsung TV,Fashion,3,10459,0.1,,UPI,Lucknow,completed
+O00569,03-07-2025,C0231,P209,Office Chair,Fashion,2,abc,,,Debit Card,Chennai,completed
+O00570,17/07/2025,C0353,P209,Office Chair,Fashon,-1,37186,0.1,,Credit Card,Mumbai,Returned
+O00571,22/02/2025,,P204,Nike Shoes,Electronics,2,16767,0,,,Lucknow,Cancelled
+O00572,02-01-2025,C0386,P206,HP Laptop,Electronic,2,abc,0,,Cash,Bangalore,Completed
+O00573,2025/09/02,C0195,P203,Sony Headphones,Electronics,-1,abc,0.05,,UPI,Pune,Returned
+O00574,21-05-2025,C0173,P208,Refrigerator,Fashon,2,abc,0.1,,, ,Completed
+O00575,2025-01-15,C0445,P210,Air Conditioner,Electronics,1,abc,0.1,,Debit Card, ,Cancelled
+O00576,17/11/2025,C0121,P202,Samsung TV,Electronic,-1,9213,10%,,Credit Card,Bangalore,Cancelled
+O00577,14/11/2025,C0992,P209,Office Chair,Home & Living,-1,52832,5%,,Credit Card,Chennai,Returned
+O00578,12/12/2025,C0222,P208,Refrigerator,Fashion,-1,57922,10%,,Credit Card,Bangalore,Returned
+O00579,2025-05-01,C0682,P206,HP Laptop,Home and Living,1,19364,ten,,Credit Card,Kolkata,Completed
+O00580,2025/08/20,C0849,P201,iPhone 15,electronics,-1,50400,0,,Credit Card,Mumbai,completed
+O00581,2025-03-02,C0964,P207,Microwave Oven,electronics,-1,15423,0,,UPI,Delhi,completed
+O00582,2025-12-13,C0713,P208,Refrigerator,Electronic,2,33287,ten,,, ,Cancelled
+O00583,2025/10/05,C0690,P208,Refrigerator,Fashon,2,17808,,,Credit Card,Jaipur,Cancelled
+O00584,26-09-2025,C0696,P207,Microwave Oven,electronics,3,9714,5%,,Cash, ,Returned
+O00585,2025-12-21,C0526,P202,Samsung TV,Electronics,-1,47753,5%,,,Chennai,Completed
+O00586,06-01-2025,C0978,P201,iPhone 15,Home & Living,2,50989,ten,,Cash,Delhi,Returned
+O00587,2025/01/13,,P207,Microwave Oven,Electronics,2,44890,0.1,,UPI,Kolkata,completed
+O00588,07/04/2025,C0972,P206,HP Laptop,Home and Living,2,21702,0.1,,Credit Card,Pune,Returned
+O00589,03/04/2025,C0974,P210,Air Conditioner,Electronics,3,64696,5%,,Cash,Mumbai,completed
+O00590,23/06/2025,C0101,P203,Sony Headphones,electronics,-1,50234,,,Cash,Bangalore,Cancelled
+O00591,13-06-2025,C0953,P201,iPhone 15,Electronic,-1,35433,ten,,UPI,Hyderabad,Returned
+O00592,2025-09-03,C0655,P209,Office Chair,Home & Living,-1,40142,0,,Credit Card,Bangalore,Cancelled
+O00593,28/04/2025,C0319,P209,Office Chair,Electronics,-1,4450,10%,,Cash,Mumbai,completed
+O00594,20/02/2025,C0729,P202,Samsung TV,Fashon,-1,abc,0.05,,Credit Card,Chennai,completed
+O00595,04/07/2025,C0616,P205,Levi Jeans,Home & Living,2,72771,5%,,Debit Card, ,Cancelled
+O00596,2025/04/27,C0390,P204,Nike Shoes,Electronics,3,abc,0,,Credit Card,Pune,Cancelled
+O00597,2025/08/16,C0206,P202,Samsung TV,Fashon,-1,44846,ten,,UPI,Jaipur,completed
+O00598,07/02/2025,C0825,P210,Air Conditioner,Fashon,1,abc,0.1,,UPI,Hyderabad,Completed
+O00599,2025/02/22,C0138,P203,Sony Headphones,Fashion,3,28300,,,Credit Card,Lucknow,completed
+O00600,19-05-2025,C0986,P208,Refrigerator,Home & Living,1,36531,0,,Debit Card,Chennai,Completed
+O00601,11-10-2025,C0970,P210,Air Conditioner,Fashon,2,34530,5%,,,Chennai,completed
+O00602,10-07-2025,C0981,P208,Refrigerator,Home and Living,3,53341,5%,,UPI,Pune,Cancelled
+O00603,2025/07/09,C0375,,Microwave Oven,Fashion,2,24667,10%,,Debit Card,Delhi,Completed
+O00604,15/04/2025,C0374,,Samsung TV,Fashon,1,71247,ten,,Credit Card,Mumbai,Completed
+O00605,2025-02-13,C0231,P208,Refrigerator,Electronics,3,abc,0.05,,UPI,Lucknow,Completed
+O00606,2025-03-15,C0973,P209,Office Chair,Home and Living,2,abc,10%,,Debit Card,Mumbai,completed
+O00607,03-03-2025,C0835,P202,Samsung TV,Electronic,1,32614,0.1,,Cash, ,completed
+O00608,2025-11-03,,P206,HP Laptop,Fashon,3,9664,ten,,Debit Card,Bangalore,Cancelled
+O00609,21/02/2025,C0080,P210,Air Conditioner,Electronics,2,abc,0.1,,UPI,Hyderabad,Cancelled
+O00610,14/09/2025,C0855,P207,Microwave Oven,Electronic,2,50541,0.05,,Cash, ,Completed
+O00611,2025-12-27,C0685,P210,Air Conditioner,Home and Living,1,11969,0.05,,Debit Card, ,Returned
+O00612,2025-04-25,C0416,P209,Office Chair,Fashion,2,64203,0.05,,Debit Card,Hyderabad,Cancelled
+O00613,08-09-2025,,,Nike Shoes,Fashon,2,abc,,,UPI,Pune,Cancelled
+O00614,2025/09/22,C0274,P209,Office Chair,electronics,-1,20505,10%,,,Hyderabad,Completed
+O00615,11/01/2025,C0479,P205,Levi Jeans,Home & Living,1,16002,0,,Debit Card,Delhi,Cancelled
+O00616,2025-12-01,C0400,P206,HP Laptop,Electronic,1,abc,,,UPI,Kolkata,Returned
+O00617,22-07-2025,C0578,P208,Refrigerator,electronics,1,61029,0.05,,UPI,Lucknow,Cancelled
+O00618,23-08-2025,C0512,P203,Sony Headphones,Home and Living,1,62152,,,Debit Card,Lucknow,Returned
+O00619,2025-08-08,C0465,P201,iPhone 15,Electronics,3,42525,5%,,Cash,Lucknow,Completed
+O00620,12-01-2025,C0730,,Sony Headphones,Home and Living,3,abc,,,UPI, ,completed
+O00621,05-09-2025,C0817,P207,Microwave Oven,Fashion,1,abc,10%,,,Lucknow,Cancelled
+O00622,2025/03/08,C0740,P207,Microwave Oven,Electronic,-1,38947,0.1,,UPI, ,Returned
+O00623,06-11-2025,C0924,P206,HP Laptop,Fashon,-1,abc,0,,Credit Card,Hyderabad,Returned
+O00624,2025/11/28,C0344,P207,Microwave Oven,Home and Living,2,abc,5%,,Debit Card,Hyderabad,Cancelled
+O00625,2025-06-18,C0370,P209,Office Chair,Fashion,1,abc,5%,,Debit Card, ,completed
+O00626,2025-11-09,C0448,P207,Microwave Oven,Home & Living,3,58074,10%,,Debit Card,Mumbai,Cancelled
+O00627,03/12/2025,C0484,P203,Sony Headphones,Fashion,2,68349,0.1,,Debit Card,Delhi,completed
+O00628,2025/10/05,C0278,P210,Air Conditioner,Fashion,1,abc,5%,,Credit Card,Delhi,completed
+O00629,25-08-2025,C0954,P206,HP Laptop,Fashion,3,50017,5%,,Debit Card,Jaipur,completed
+O00630,2025/04/14,C0796,P210,Air Conditioner,Home & Living,1,8834,,,Debit Card,Lucknow,Cancelled
+O00631,05-03-2025,C0986,P202,Samsung TV,electronics,2,abc,,,Cash,Chennai,completed
+O00632,20/01/2025,C0442,P203,Sony Headphones,Home and Living,3,63970,0.1,,Debit Card, ,Cancelled
+O00633,2025/12/20,C0288,P206,HP Laptop,Fashon,1,12242,,,UPI,Bangalore,Completed
+O00634,2025/11/05,C0182,P208,Refrigerator,Fashion,1,abc,10%,,UPI,Chennai,completed
+O00635,20-12-2025,C0379,P204,Nike Shoes,Home and Living,2,43542,0.05,,,Chennai,Completed
+O00636,2025-05-12,,P205,Levi Jeans,Fashon,-1,abc,,,,Jaipur,Cancelled
+O00637,2025-01-23,C0009,,Air Conditioner,Electronics,3,abc,0.1,,UPI,Delhi,Cancelled
+O00638,06/06/2025,C0948,,Office Chair,Home & Living,2,abc,5%,,Debit Card, ,Cancelled
+O00639,2025-08-13,C0634,P210,Air Conditioner,electronics,-1,55074,0.1,,,Pune,Cancelled
+O00640,25/09/2025,C0314,P210,Air Conditioner,electronics,2,abc,10%,,Credit Card, ,Returned
+O00641,2025/10/15,C0835,P203,Sony Headphones,Fashon,1,abc,10%,,Debit Card,Delhi,Cancelled
+O00642,20-02-2025,C0779,P206,HP Laptop,Electronics,-1,64685,10%,,,Bangalore,Returned
+O00643,2025-08-20,C0147,P206,HP Laptop,Fashion,3,11173,0.1,,Credit Card,Hyderabad,completed
+O00644,2025-09-05,C0963,P204,Nike Shoes,electronics,-1,13755,,,Debit Card,Bangalore,completed
+O00645,28/12/2025,C0391,P210,Air Conditioner,Electronics,3,abc,0.1,,,Hyderabad,completed
+O00646,17/06/2025,C0865,P205,Levi Jeans,Home & Living,2,69747,5%,,Credit Card,Bangalore,Completed
+O00647,2025/12/02,C0116,P207,Microwave Oven,Home & Living,2,abc,,,Debit Card,Pune,Cancelled
+O00648,21/07/2025,C0246,P201,iPhone 15,Electronics,3,abc,10%,,,Lucknow,completed
+O00649,2025/06/02,,,Refrigerator,electronics,1,abc,0,,UPI,Lucknow,Returned
+O00650,2025/11/28,C0283,,Levi Jeans,Electronic,3,7930,5%,,Credit Card,Hyderabad,Returned
+O00651,2025/07/24,C0377,P203,Sony Headphones,Fashion,2,72816,10%,,UPI,Jaipur,Completed
+O00652,02-10-2025,C0603,P210,Air Conditioner,Home & Living,1,1301,,,UPI,Delhi,Cancelled
+O00653,09/03/2025,C0273,P210,Air Conditioner,Electronic,2,abc,5%,,Credit Card,Bangalore,Completed
+O00654,2025/06/09,C0126,P201,iPhone 15,Electronics,2,76784,ten,,UPI,Lucknow,completed
+O00655,2025-09-13,C0293,P208,Refrigerator,Home and Living,3,33032,5%,,UPI,Delhi,completed
+O00656,2025/04/05,C0684,P205,Levi Jeans,Electronics,2,10450,5%,,Debit Card,Delhi,Returned
+O00657,21/03/2025,C0667,P208,Refrigerator,Fashion,1,35508,10%,,,Bangalore,Cancelled
+O00658,2025/11/18,C0201,P203,Sony Headphones,electronics,-1,abc,ten,,Debit Card,Jaipur,Completed
+O00659,28/04/2025,C0919,P210,Air Conditioner,Home and Living,-1,2603,5%,,Credit Card,Jaipur,Cancelled
+O00660,13/06/2025,C0426,P207,Microwave Oven,Electronic,-1,7919,ten,,Credit Card, ,Returned
+O00661,2025/02/22,C0309,P207,Microwave Oven,Fashion,1,abc,10%,,Cash,Delhi,Cancelled
+O00662,2025/09/25,C0908,P210,Air Conditioner,Home & Living,3,abc,ten,,UPI,Delhi,completed
+O00663,2025-03-11,C0736,P205,Levi Jeans,Fashion,-1,57588,5%,,UPI,Bangalore,completed
+O00664,2025-10-06,C0464,P202,Samsung TV,electronics,2,44927,0.1,,Debit Card,Delhi,Completed
+O00665,2025/12/08,C0226,P208,Refrigerator,Home and Living,1,3472,0.1,,,Kolkata,Completed
+O00666,08-02-2025,C0469,P210,Air Conditioner,Fashion,3,19101,10%,,UPI,Mumbai,Completed
+O00667,12-06-2025,C0985,P210,Air Conditioner,Home and Living,-1,abc,,,Cash,Chennai,Completed
+O00668,2025-09-09,C0926,P207,Microwave Oven,Home and Living,2,13561,,,,Jaipur,Completed
+O00669,2025/01/20,,P208,Refrigerator,Electronic,1,abc,ten,,,Lucknow,Cancelled
+O00670,2025/11/10,C0703,P201,iPhone 15,Fashon,1,abc,10%,,Debit Card,Lucknow,Cancelled
+O00671,2025/01/07,C0508,P209,Office Chair,Electronic,-1,63966,0,,Credit Card, ,completed
+O00672,17-11-2025,C0842,P201,iPhone 15,Electronics,3,abc,10%,,Credit Card,Bangalore,completed
+O00673,2025-08-20,C0172,,Office Chair,Electronic,2,abc,,,UPI,Pune,Returned
+O00674,2025/01/07,C0124,P210,Air Conditioner,Home & Living,1,abc,0.05,,,Jaipur,Cancelled
+O00675,26-05-2025,C0748,P208,Refrigerator,Home & Living,-1,75237,0.05,,,Lucknow,Cancelled
+O00676,2025-06-07,C0095,P205,Levi Jeans,Electronic,-1,abc,10%,,Credit Card,Mumbai,Returned
+O00677,2025/02/11,C0571,P208,Refrigerator,Electronics,-1,abc,5%,,Debit Card,Bangalore,Completed
+O00678,2025/02/11,C0161,P205,Levi Jeans,Home and Living,1,56628,0,,Debit Card,Hyderabad,Cancelled
+O00679,07/02/2025,C0836,P209,Office Chair,Home and Living,-1,27975,0.1,,Credit Card,Bangalore,completed
+O00680,2025-10-07,C0287,P206,HP Laptop,Fashon,3,69066,10%,,UPI,Delhi,Returned
+O00681,28-12-2025,C0181,P210,Air Conditioner,Electronics,-1,abc,0.05,,,Jaipur,Returned
+O00682,2025/07/15,C0928,P210,Air Conditioner,Electronic,2,abc,5%,,Debit Card,Hyderabad,Cancelled
+O00683,2025/01/20,C0472,P205,Levi Jeans,Fashon,3,abc,ten,,,Lucknow,Cancelled
+O00684,28-12-2025,C0865,P207,Microwave Oven,Fashon,1,abc,0.1,,Cash, ,completed
+O00685,2025/02/02,C0912,P205,Levi Jeans,Home and Living,3,31422,ten,,Debit Card,Hyderabad,Cancelled
+O00686,13-08-2025,C0050,P202,Samsung TV,Electronic,2,77953,5%,,Cash,Jaipur,completed
+O00687,02/09/2025,C0199,P209,Office Chair,electronics,3,abc,10%,,Debit Card,Mumbai,Cancelled
+O00688,2025/01/09,C0168,P204,Nike Shoes,Home and Living,-1,7185,5%,,Debit Card,Mumbai,Completed
+O00689,2025/04/28,C0957,P210,Air Conditioner,Home and Living,3,19328,ten,,Cash,Pune,Returned
+O00690,2025/03/05,C0026,P209,Office Chair,electronics,1,13531,10%,,Debit Card,Kolkata,Cancelled
+O00691,2025/07/02,C0421,P205,Levi Jeans,Home and Living,2,7076,,,Cash,Bangalore,Cancelled
+O00692,2025-08-18,C0897,P202,Samsung TV,Fashon,3,15925,0.05,,,Delhi,completed
+O00693,28/05/2025,C0152,P207,Microwave Oven,Electronics,2,34557,0.1,,Credit Card,Mumbai,Cancelled
+O00694,2025/08/23,C0456,P208,Refrigerator,Electronic,1,28403,,,,Pune,Completed
+O00695,2025/12/22,C0136,P204,Nike Shoes,electronics,2,abc,0,,Debit Card, ,completed
+O00696,2025-12-19,C0410,,Levi Jeans,electronics,-1,abc,0.05,,UPI,Mumbai,Cancelled
+O00697,2025/06/26,C0417,P208,Refrigerator,Electronics,3,abc,,,UPI,Hyderabad,Cancelled
+O00698,2025/09/05,C0480,P209,Office Chair,Electronics,-1,abc,5%,,Credit Card,Jaipur,completed
+O00699,2025-02-26,,P206,HP Laptop,Electronic,1,abc,,,Cash,Jaipur,Returned
+O00700,05-01-2025,C0064,P204,Nike Shoes,Electronics,1,16301,0.1,,Cash, ,Cancelled
+O00701,2025/01/05,C0048,P207,Microwave Oven,Fashon,1,21751,,,UPI,Mumbai,Returned
+O00702,08/11/2025,C0645,P210,Air Conditioner,Fashon,-1,abc,5%,,Credit Card, ,Returned
+O00703,05-04-2025,C0835,P209,Office Chair,Fashon,-1,44979,5%,,Debit Card,Bangalore,Returned
+O00704,03/06/2025,C0450,P209,Office Chair,electronics,-1,54965,0,,Credit Card,Kolkata,Cancelled
+O00705,2025-06-11,C0065,P202,Samsung TV,Fashon,2,44680,5%,,,Pune,Cancelled
+O00706,2025-09-07,,P207,Microwave Oven,Fashon,2,abc,0.1,,Credit Card,Delhi,Cancelled
+O00707,2025/11/04,C0334,,Levi Jeans,Fashon,1,abc,ten,,, ,Completed
+O00708,2025-05-28,C0675,P210,Air Conditioner,Fashon,-1,40112,0.1,,Cash,Lucknow,Cancelled
+O00709,2025-10-20,C0038,P209,Office Chair,Electronic,3,40052,0,,UPI, ,completed
+O00710,28/08/2025,,,iPhone 15,Fashon,1,57124,10%,,UPI,Lucknow,Cancelled
+O00711,2025-08-21,C0877,P205,Levi Jeans,Fashon,2,23709,0,,Credit Card,Bangalore,completed
+O00712,14/11/2025,C0747,P205,Levi Jeans,electronics,-1,abc,0.05,,UPI,Mumbai,Cancelled
+O00713,12/03/2025,C0317,P206,HP Laptop,Electronic,1,57282,ten,,Credit Card,Delhi,Completed
+O00714,07-05-2025,C0475,P201,iPhone 15,Electronic,2,abc,5%,,,Mumbai,completed
+O00715,23-03-2025,C0969,P210,Air Conditioner,Fashon,1,abc,ten,,Debit Card, ,completed
+O00716,27-04-2025,C0436,P203,Sony Headphones,Home and Living,2,abc,,,Debit Card,Chennai,Completed
+O00717,20/04/2025,,P209,Office Chair,electronics,3,47741,0.1,,Debit Card,Kolkata,Returned
+O00718,10-11-2025,C0991,P207,Microwave Oven,Home & Living,1,abc,10%,,Cash,Lucknow,Cancelled
+O00719,24-07-2025,C0811,P201,iPhone 15,Home and Living,2,63069,0,,Credit Card,Mumbai,Completed
+O00720,2025-09-08,C0941,P206,HP Laptop,electronics,-1,32785,10%,,,Pune,Returned
+O00721,06/08/2025,C0408,P203,Sony Headphones,electronics,2,abc,,,Cash,Bangalore,completed
+O00722,01/06/2025,C0643,P202,Samsung TV,Home and Living,2,48254,0.1,,Cash,Kolkata,Returned
+O00723,17-07-2025,C0507,P201,iPhone 15,Electronic,-1,abc,0.05,,UPI,Chennai,Returned
+O00724,26/03/2025,C0931,P203,Sony Headphones,Electronic,1,31415,0.1,,Credit Card,Jaipur,Returned
+O00725,2025/08/15,,,Microwave Oven,Electronics,2,13073,ten,,Debit Card,Jaipur,Cancelled
+O00726,2025/12/12,C0388,P203,Sony Headphones,Home & Living,3,abc,0.05,,,Delhi,completed
+O00727,13/03/2025,C0360,P208,Refrigerator,Fashon,2,abc,10%,,Debit Card,Pune,Completed
+O00728,05-06-2025,C0531,P201,iPhone 15,electronics,3,53990,5%,,Cash,Pune,Cancelled
+O00729,22/07/2025,C0181,P207,Microwave Oven,electronics,3,44583,,,Debit Card, ,Completed
+O00730,02/07/2025,C0028,P207,Microwave Oven,electronics,3,9694,,,Cash, ,completed
+O00731,2025-02-21,C0191,P205,Levi Jeans,Home and Living,-1,abc,0,,Credit Card,Mumbai,Completed
+O00732,15/02/2025,C0647,P209,Office Chair,Home & Living,3,52129,10%,,Cash,Bangalore,Cancelled
+O00733,26/08/2025,C0803,P210,Air Conditioner,Home & Living,1,49461,0.05,,Debit Card,Hyderabad,completed
+O00734,11/01/2025,C0131,P201,iPhone 15,Electronic,3,67964,0.1,,Debit Card,Jaipur,completed
+O00735,19/03/2025,C0990,P201,iPhone 15,Fashon,-1,abc,0.1,,Cash,Jaipur,Completed
+O00736,2025-03-04,C0848,P209,Office Chair,Home and Living,-1,55590,,,Credit Card,Kolkata,Cancelled
+O00737,28-11-2025,C0676,P203,Sony Headphones,Fashion,1,abc,0.1,,,Delhi,completed
+O00738,18/04/2025,C0932,P205,Levi Jeans,Electronics,-1,abc,10%,,Cash,Bangalore,completed
+O00739,2025/03/11,C0174,P209,Office Chair,Electronics,-1,49427,5%,,Debit Card,Bangalore,Returned
+O00740,28/10/2025,C0710,P205,Levi Jeans,Home and Living,2,abc,5%,,Credit Card, ,Cancelled
+O00741,2025/09/10,C0454,P206,HP Laptop,Electronics,2,77232,ten,,Debit Card,Lucknow,Completed
+O00742,2025-02-16,C0631,P209,Office Chair,Home and Living,3,21873,,,Credit Card,Lucknow,Cancelled
+O00743,2025-04-06,C0535,P202,Samsung TV,Electronics,1,abc,0,,Cash,Jaipur,Cancelled
+O00744,2025/04/01,C0179,P204,Nike Shoes,electronics,1,36493,,,Credit Card,Lucknow,Cancelled
+O00745,2025-05-19,,P201,iPhone 15,Home & Living,-1,52617,0,,UPI,Lucknow,Completed
+O00746,2025-03-15,C0486,P209,Office Chair,Home and Living,-1,42652,0,,,Kolkata,Returned
+O00747,19/03/2025,C0849,P209,Office Chair,Fashon,3,45310,0,,Debit Card, ,completed
+O00748,06-02-2025,C0852,P210,Air Conditioner,Electronics,1,abc,0,,Credit Card,Jaipur,Cancelled
+O00749,2025-04-22,C0363,P209,Office Chair,Fashon,1,54440,0.05,,Credit Card, ,Cancelled
+O00750,04/12/2025,C0233,P204,Nike Shoes,Home and Living,-1,abc,10%,,UPI, ,completed
+O00751,2025/12/27,C0090,P201,iPhone 15,Home and Living,1,76574,10%,,,Bangalore,Completed
+O00752,18/10/2025,C0996,P206,HP Laptop,Fashon,3,45444,5%,,Debit Card,Kolkata,Completed
+O00753,01-03-2025,,P208,Refrigerator,Fashon,1,21197,0,,Credit Card,Pune,completed
+O00754,13-06-2025,C0930,P205,Levi Jeans,Fashon,-1,abc,ten,,Cash,Lucknow,Completed
+O00755,02-03-2025,,P209,Office Chair,electronics,2,51889,5%,,Cash,Chennai,Returned
+O00756,2025-09-16,C0047,P209,Office Chair,Home and Living,2,78645,,,Cash,Kolkata,completed
+O00757,22/06/2025,C0399,P204,Nike Shoes,Fashon,3,abc,0.1,,Credit Card,Pune,Completed
+O00758,2025/11/17,C0807,P210,Air Conditioner,Fashion,1,abc,10%,,Credit Card,Lucknow,Completed
+O00759,2025-04-21,C0783,P210,Air Conditioner,Fashon,3,21532,0.05,,Debit Card, ,Completed
+O00760,07-01-2025,C0163,P208,Refrigerator,Electronics,3,55833,,,,Pune,completed
+O00761,2025-05-08,C0205,P205,Levi Jeans,Fashion,-1,72703,ten,,Cash,Chennai,Cancelled
+O00762,2025/10/28,C0102,P202,Samsung TV,Fashon,2,43464,10%,,Debit Card,Bangalore,Completed
+O00763,2025/08/03,,P209,Office Chair,Electronic,3,abc,0,,Credit Card, ,Completed
+O00764,28-04-2025,C0406,,HP Laptop,Home and Living,1,38567,0,,UPI,Kolkata,Completed
+O00765,21/03/2025,C0661,P207,Microwave Oven,Electronics,1,44060,0.05,,Debit Card,Chennai,completed
+O00766,01-11-2025,C0844,P204,Nike Shoes,Electronic,3,57251,5%,,Credit Card,Chennai,Completed
+O00767,2025/04/16,C0228,P201,iPhone 15,electronics,1,abc,0.05,,UPI,Pune,completed
+O00768,20/01/2025,C0572,,Sony Headphones,Electronics,3,55127,0.1,,Debit Card,Delhi,completed
+O00769,2025-10-14,C0648,P208,Refrigerator,Home & Living,3,52550,0.1,,Credit Card,Jaipur,Cancelled
+O00770,2025-04-22,C0724,P206,HP Laptop,Home & Living,1,20282,0,,,Bangalore,Completed
+O00771,04/10/2025,C0880,P201,iPhone 15,Electronics,1,abc,ten,,UPI,Kolkata,completed
+O00772,21/01/2025,C0813,P201,iPhone 15,Home & Living,3,31980,ten,,UPI,Chennai,completed
+O00773,07/02/2025,C0446,P201,iPhone 15,Fashon,-1,72614,0.1,,Credit Card,Mumbai,Returned
+O00774,2025-11-23,C0781,P204,Nike Shoes,Electronic,3,11114,0.05,,Debit Card,Lucknow,Cancelled
+O00775,25/08/2025,C0881,P201,iPhone 15,Fashon,3,47463,10%,,Cash,Kolkata,Cancelled
+O00776,20-02-2025,C0413,P206,HP Laptop,Home and Living,-1,66548,5%,,Cash,Mumbai,Completed
+O00777,2025-02-13,C0333,P207,Microwave Oven,Home and Living,3,abc,ten,,,Lucknow,completed
+O00778,06-03-2025,C0269,,Microwave Oven,electronics,2,68537,0,,Debit Card,Lucknow,Returned
+O00779,24-10-2025,C0215,P202,Samsung TV,Home and Living,1,61542,,,UPI,Mumbai,Completed
+O00780,2025/03/24,C0988,P210,Air Conditioner,electronics,-1,abc,0.1,,Credit Card,Pune,Cancelled
+O00781,07/04/2025,C0708,P210,Air Conditioner,Electronic,1,abc,,,,Mumbai,Returned
+O00782,19/05/2025,C0146,P206,HP Laptop,Fashon,-1,28291,0.1,,Credit Card,Chennai,completed
+O00783,11/07/2025,C0942,P204,Nike Shoes,Electronics,-1,50747,0.1,,,Jaipur,completed
+O00784,2025-11-06,C0018,P201,iPhone 15,Electronic,1,abc,5%,,Debit Card,Jaipur,completed
+O00785,04/09/2025,C0773,P206,HP Laptop,Fashion,1,1533,0,,Debit Card,Lucknow,Returned
+O00786,04-03-2025,C0260,P207,Microwave Oven,Home and Living,3,36896,0,,Debit Card,Pune,Cancelled
+O00787,2025-01-26,C0355,P205,Levi Jeans,electronics,1,56523,0.1,,Debit Card,Chennai,Returned
+O00788,28-06-2025,C0687,P202,Samsung TV,Home and Living,2,73599,0,,Cash,Lucknow,completed
+O00789,2025/03/05,C0580,P209,Office Chair,Electronics,1,3503,0.05,,Debit Card,Kolkata,completed
+O00790,01/03/2025,C0836,P205,Levi Jeans,Fashion,3,19341,ten,,UPI,Bangalore,Returned
+O00791,2025-06-24,C0702,P210,Air Conditioner,electronics,3,37057,0,,Cash,Bangalore,Cancelled
+O00792,24-12-2025,C0189,P204,Nike Shoes,Home and Living,3,16443,0,,, ,Cancelled
+O00793,2025/12/22,C0982,P208,Refrigerator,Electronics,1,abc,10%,,Cash,Hyderabad,completed
+O00794,2025-12-19,C0059,P209,Office Chair,Electronics,3,abc,10%,,,Delhi,Completed
+O00795,2025-02-08,C0841,P205,Levi Jeans,Electronics,1,abc,0.05,,Credit Card,Bangalore,completed
+O00796,09/03/2025,C0346,P207,Microwave Oven,Fashon,2,78614,0,,Debit Card,Delhi,Completed
+O00797,2025/06/18,C0672,P208,Refrigerator,Electronic,2,58936,5%,,Cash,Mumbai,completed
+O00798,10/07/2025,,P210,Air Conditioner,Electronic,2,43377,5%,,Cash, ,Returned
+O00799,09-01-2025,C0854,P201,iPhone 15,Fashon,1,19894,5%,,UPI,Lucknow,Returned
+O00800,2025-01-05,C0810,P209,Office Chair,Fashon,1,22554,,,Debit Card, ,Returned
+O00801,2025/07/04,C0886,P208,Refrigerator,Fashion,2,39867,0,,Debit Card,Jaipur,Cancelled
+O00802,2025-08-08,C0069,P201,iPhone 15,Fashion,-1,abc,5%,,Debit Card,Mumbai,Completed
+O00803,06-01-2025,C0118,P202,Samsung TV,Fashon,-1,26068,0.05,,Debit Card,Pune,Returned
+O00804,24-12-2025,C0279,P209,Office Chair,Electronic,2,61294,5%,,Credit Card,Bangalore,Returned
+O00805,28-07-2025,C0813,P208,Refrigerator,Fashion,1,abc,0.1,,UPI,Mumbai,Cancelled
+O00806,05/04/2025,C0108,P203,Sony Headphones,Fashion,2,78153,5%,,Cash,Pune,Completed
+O00807,21-09-2025,C0007,P207,Microwave Oven,electronics,3,40396,0,,UPI,Mumbai,Returned
+O00808,09/06/2025,C0323,P201,iPhone 15,Electronics,-1,abc,0.1,,Credit Card,Lucknow,Completed
+O00809,2025/04/23,C0573,P201,iPhone 15,electronics,3,76059,0,,UPI,Lucknow,Completed
+O00810,02-04-2025,C0791,P202,Samsung TV,electronics,1,abc,0.1,,Credit Card, ,Cancelled
+O00811,2025-10-12,C0576,P204,Nike Shoes,Fashon,-1,11475,,,,Delhi,Returned
+O00812,2025-10-25,C0014,,Microwave Oven,Electronic,1,15396,,,Cash,Kolkata,Completed
+O00813,2025/07/26,C0074,P206,HP Laptop,Electronic,2,abc,,,UPI,Mumbai,completed
+O00814,2025/06/15,C0395,P202,Samsung TV,Fashion,-1,51235,,,UPI,Bangalore,Cancelled
+O00815,14/05/2025,C0677,P201,iPhone 15,Fashon,3,75338,ten,,Credit Card,Pune,Returned
+O00816,16-05-2025,C0804,P204,Nike Shoes,Electronics,2,54739,5%,,Credit Card,Hyderabad,completed
+O00817,2025-05-15,C0409,P205,Levi Jeans,Home and Living,3,4352,0.1,,UPI,Bangalore,Cancelled
+O00818,02-02-2025,C0849,P205,Levi Jeans,Home and Living,1,73181,0.05,,Debit Card,Hyderabad,Returned
+O00819,04-09-2025,C0673,P205,Levi Jeans,electronics,-1,abc,0.05,,UPI,Jaipur,completed
+O00820,2025-01-26,C0065,P205,Levi Jeans,Home & Living,3,abc,0.05,,Cash,Lucknow,completed
+O00821,2025-02-15,C0284,P203,Sony Headphones,Electronic,-1,5307,0.1,,Credit Card,Chennai,Returned
+O00822,16/02/2025,C0047,P210,Air Conditioner,Electronics,2,abc,,,Cash,Kolkata,Cancelled
+O00823,02-09-2025,C0258,P210,Air Conditioner,Fashon,2,23257,,,Debit Card,Jaipur,completed
+O00824,2025/12/22,C0819,P201,iPhone 15,Fashion,2,abc,0.1,,UPI, ,completed
+O00825,05-02-2025,C0642,P207,Microwave Oven,electronics,3,4609,0.05,,Debit Card,Hyderabad,completed
+O00826,23-06-2025,C0378,P208,Refrigerator,Electronics,-1,abc,,,UPI,Mumbai,Completed
+O00827,07-02-2025,C0738,P205,Levi Jeans,Home and Living,2,33361,,,Credit Card,Kolkata,Cancelled
+O00828,04/08/2025,C0080,P206,HP Laptop,Electronic,2,36665,0.05,,UPI,Chennai,Completed
+O00829,23/08/2025,C0941,P207,Microwave Oven,Electronics,1,5441,0,,Debit Card,Bangalore,Returned
+O00830,2025/02/02,C0338,P209,Office Chair,Fashon,2,11656,0,,Cash,Pune,Completed
+O00831,2025-09-09,C0018,P207,Microwave Oven,Fashon,-1,abc,ten,,Credit Card,Hyderabad,Completed
+O00832,2025-04-26,C0687,P206,HP Laptop,Fashion,3,abc,10%,,UPI,Mumbai,completed
+O00833,23/02/2025,C0739,P203,Sony Headphones,Fashion,3,29238,ten,,Cash,Pune,Returned
+O00834,2025-01-19,C0217,P205,Levi Jeans,Electronic,1,55953,10%,,,Delhi,Cancelled
+O00835,2025/06/18,C0462,P201,iPhone 15,Home & Living,1,27885,0.1,,Debit Card,Jaipur,completed
+O00836,2025-07-23,C0367,P207,Microwave Oven,Fashon,-1,36865,5%,,,Mumbai,Cancelled
+O00837,01/08/2025,C0062,,Sony Headphones,Electronic,-1,14158,,,Cash,Kolkata,Returned
+O00838,2025/09/01,C0001,P203,Sony Headphones,Fashion,1,abc,10%,,,Lucknow,completed
+O00839,26/11/2025,C0019,P202,Samsung TV,electronics,-1,72499,,,UPI,Hyderabad,Completed
+O00840,2025-03-27,C0446,P206,HP Laptop,Fashon,1,35773,,,UPI,Lucknow,Returned
+O00841,2025-07-13,C0683,P206,HP Laptop,Home & Living,2,abc,ten,,Credit Card,Bangalore,Cancelled
+O00842,12-02-2025,,P210,Air Conditioner,Fashion,1,abc,0.1,,Cash,Jaipur,Returned
+O00843,2025-03-23,C0668,P210,Air Conditioner,Fashon,1,abc,0.1,,,Chennai,completed
+O00844,2025/01/02,C0140,P207,Microwave Oven,Fashion,1,79708,,,,Lucknow,Returned
+O00845,14-07-2025,C0092,P208,Refrigerator,Home and Living,3,abc,0.1,,Cash,Delhi,completed
+O00846,21-06-2025,C0076,P203,Sony Headphones,electronics,2,abc,5%,,UPI,Jaipur,Cancelled
+O00847,2025-02-02,C0586,P206,HP Laptop,Fashion,1,abc,,,,Bangalore,Completed
+O00848,15-11-2025,C0734,P207,Microwave Oven,electronics,1,14596,5%,,Credit Card, ,Returned
+O00849,2025/01/01,C0970,P203,Sony Headphones,Fashon,2,38083,0,,Cash,Delhi,completed
+O00850,25-09-2025,C0474,P203,Sony Headphones,Home & Living,2,78373,ten,,,Lucknow,completed
+O00851,2025/10/01,C0663,P203,Sony Headphones,Home and Living,-1,11883,5%,,UPI,Jaipur,Completed
+O00852,23-11-2025,C0038,P202,Samsung TV,Electronics,-1,7233,0.05,,Credit Card,Pune,Completed
+O00853,2025/03/02,C0536,P210,Air Conditioner,Home & Living,1,22174,,,Cash,Lucknow,Returned
+O00854,2025-10-10,C0076,P201,iPhone 15,Fashion,1,6066,ten,,Credit Card,Delhi,Returned
+O00855,2025-10-17,C0503,P206,HP Laptop,electronics,3,abc,0.1,,,Mumbai,Returned
+O00856,03/11/2025,C0237,P204,Nike Shoes,Fashion,3,55687,0,,,Jaipur,Returned
+O00857,15-10-2025,C0617,P204,Nike Shoes,Electronic,3,16606,ten,,Debit Card,Mumbai,Completed
+O00858,2025/07/20,C0190,P205,Levi Jeans,Fashon,1,72341,ten,,Cash,Delhi,Cancelled
+O00859,13-07-2025,C0668,P208,Refrigerator,Home & Living,3,10483,5%,,UPI,Pune,Returned
+O00860,2025/04/16,C0783,P201,iPhone 15,Electronic,2,79934,5%,,UPI,Chennai,Cancelled
+O00861,2025/08/16,,P205,Levi Jeans,Electronics,-1,abc,0,,Cash,Pune,Returned
+O00862,27/04/2025,C0713,P208,Refrigerator,Fashion,2,abc,0,,Debit Card,Chennai,completed
+O00863,06/07/2025,C0544,P205,Levi Jeans,Electronic,2,abc,0,,Debit Card,Hyderabad,Completed
+O00864,19-10-2025,C0487,,Refrigerator,Fashion,1,27289,0.05,,Cash,Kolkata,Completed
+O00865,2025/01/03,C0431,P207,Microwave Oven,Home and Living,1,abc,0,,Debit Card,Jaipur,completed
+O00866,28/07/2025,C0861,P205,Levi Jeans,Home and Living,-1,44139,0.1,,, ,Returned
+O00867,15-04-2025,C0213,P209,Office Chair,Fashon,1,abc,5%,,,Lucknow,Cancelled
+O00868,28/09/2025,C0702,P205,Levi Jeans,Electronic,3,abc,0.05,,, ,Cancelled
+O00869,14-02-2025,C0938,P206,HP Laptop,Electronic,-1,abc,,,Credit Card,Mumbai,completed
+O00870,22-11-2025,C0317,P206,HP Laptop,Electronics,2,abc,10%,,Credit Card,Chennai,Cancelled
+O00871,28-02-2025,C0618,P210,Air Conditioner,Electronics,2,abc,0,,UPI, ,completed
+O00872,2025-06-22,C0789,P204,Nike Shoes,Fashon,1,abc,0,,UPI,Delhi,Cancelled
+O00873,2025-02-03,C0317,P210,Air Conditioner,Home & Living,3,abc,10%,,Credit Card,Pune,Cancelled
+O00874,2025/12/27,C0977,P207,Microwave Oven,Home & Living,2,13604,ten,,Cash,Bangalore,completed
+O00875,2025-02-18,C0743,P206,HP Laptop,Electronics,-1,78552,10%,,Credit Card,Jaipur,Cancelled
+O00876,18/05/2025,C0653,P203,Sony Headphones,electronics,1,abc,5%,,Credit Card,Mumbai,Returned
+O00877,2025/02/15,C0239,P202,Samsung TV,electronics,-1,51090,ten,,Debit Card,Hyderabad,Returned
+O00878,2025/10/15,C0047,P204,Nike Shoes,Home and Living,-1,abc,0.1,,Credit Card,Kolkata,Cancelled
+O00879,18/01/2025,C0601,P209,Office Chair,Fashon,3,abc,0.05,,,Kolkata,Cancelled
+O00880,09-01-2025,C0863,P204,Nike Shoes,electronics,3,12325,ten,,,Mumbai,Cancelled
+O00881,2025-08-11,,P206,HP Laptop,Electronic,3,16205,10%,,,Jaipur,Cancelled
+O00882,27/03/2025,C0827,P201,iPhone 15,Fashon,3,abc,5%,,Cash,Lucknow,Completed
+O00883,2025/10/03,C0290,P208,Refrigerator,Fashon,-1,abc,10%,,Debit Card,Kolkata,Completed
+O00884,25-02-2025,C0468,P202,Samsung TV,Home & Living,1,77410,ten,,,Pune,Completed
+O00885,2025/09/16,C0291,P203,Sony Headphones,Electronic,2,3126,0,,Debit Card,Delhi,Cancelled
+O00886,2025-10-22,C0729,P205,Levi Jeans,Electronic,2,40774,,,Cash,Lucknow,Completed
+O00887,2025-08-24,,P206,HP Laptop,electronics,1,1564,0.05,,Debit Card,Mumbai,Returned
+O00888,21-11-2025,C0992,P206,HP Laptop,Home & Living,-1,abc,0.05,,Credit Card,Lucknow,completed
+O00889,2025/01/19,C0406,P204,Nike Shoes,Fashon,1,73829,,,Cash,Hyderabad,completed
+O00890,2025/12/04,C0558,P202,Samsung TV,Home and Living,3,12569,0.1,,Credit Card,Pune,Returned
+O00891,14-10-2025,C0446,,Sony Headphones,electronics,-1,abc,0.1,,Debit Card,Delhi,Completed
+O00892,2025-07-02,C0305,P210,Air Conditioner,electronics,1,abc,10%,,,Lucknow,Cancelled
+O00893,2025/03/16,C0608,P201,iPhone 15,Electronic,3,61211,ten,,Credit Card,Delhi,Returned
+O00894,2025-06-24,C0317,P201,iPhone 15,electronics,2,40200,10%,,UPI,Bangalore,Completed
+O00895,2025-02-25,C0092,P204,Nike Shoes,Electronic,3,abc,,,Debit Card,Bangalore,Returned
+O00896,10-03-2025,C0207,P207,Microwave Oven,electronics,-1,10841,,,Debit Card,Bangalore,Completed
+O00897,2025/12/21,C0356,P203,Sony Headphones,Fashon,-1,28934,0.05,,Cash,Delhi,Returned
+O00898,18/07/2025,C0035,,Sony Headphones,Home & Living,-1,63447,ten,,Credit Card, ,completed
+O00899,14-10-2025,C0339,P202,Samsung TV,Home and Living,-1,49300,0.1,,,Bangalore,completed
+O00900,2025/08/17,,P202,Samsung TV,Fashon,2,39609,10%,,Credit Card,Lucknow,Cancelled
+O00901,15-02-2025,C0362,P208,Refrigerator,Electronic,-1,25578,0.05,,Credit Card,Jaipur,Completed
+O00902,11-09-2025,C0226,P204,Nike Shoes,Electronics,2,32305,,,Cash, ,Cancelled
+O00903,2025/03/06,C0039,P203,Sony Headphones,Home & Living,2,11445,0,,Credit Card,Lucknow,completed
+O00904,2025/11/14,C0396,P208,Refrigerator,Electronic,3,abc,,,Debit Card,Delhi,Completed
+O00905,17/01/2025,C0579,P208,Refrigerator,electronics,-1,40539,0.05,,Credit Card,Delhi,Cancelled
+O00906,13/09/2025,C0191,P203,Sony Headphones,Fashon,1,15575,0.05,,UPI,Chennai,completed
+O00907,2025/07/05,C0452,,Microwave Oven,Home & Living,3,50669,0.05,,Debit Card,Jaipur,Returned
+O00908,2025-08-05,C0904,P205,Levi Jeans,Home and Living,2,abc,10%,,Debit Card,Chennai,Returned
+O00909,01-07-2025,C0666,P209,Office Chair,Electronic,1,38521,10%,,UPI,Hyderabad,Completed
+O00910,03/05/2025,C0583,P209,Office Chair,Electronics,2,abc,5%,,UPI,Delhi,Completed
+O00911,25/10/2025,C0229,P204,Nike Shoes,Home and Living,-1,16593,0.05,,UPI,Delhi,Cancelled
+O00912,25/11/2025,C0051,P210,Air Conditioner,Fashion,1,abc,5%,,Credit Card,Mumbai,Returned
+O00913,14-12-2025,C0608,P206,HP Laptop,Fashion,3,10979,10%,,,Kolkata,Returned
+O00914,2025-04-16,C0009,P209,Office Chair,Electronics,1,11800,,,,Lucknow,Returned
+O00915,06/06/2025,C0359,P206,HP Laptop,Fashion,2,29546,ten,,Cash,Chennai,Cancelled
+O00916,11-05-2025,C0542,P206,HP Laptop,Home & Living,3,abc,0,,Cash,Kolkata,Cancelled
+O00917,25-06-2025,C0424,P209,Office Chair,Fashon,-1,57799,0,,Debit Card,Pune,Completed
+O00918,2025/06/09,C0437,P206,HP Laptop,electronics,-1,25319,0,,Debit Card,Kolkata,Completed
+O00919,09-03-2025,C0081,P203,Sony Headphones,Fashion,1,54283,0,,,Delhi,Completed
+O00920,11-07-2025,C0629,P203,Sony Headphones,Electronics,2,46140,0.05,,Cash,Chennai,Returned
+O00921,2025/12/10,C0538,P210,Air Conditioner,Fashon,-1,abc,ten,,Debit Card,Kolkata,completed
+O00922,2025-10-14,C0574,P205,Levi Jeans,electronics,-1,24003,0.05,,Debit Card,Bangalore,Returned
+O00923,2025-08-25,C0782,P203,Sony Headphones,Home & Living,1,66122,0.1,,Credit Card,Bangalore,Returned
+O00924,2025/09/05,C0403,P206,HP Laptop,Home & Living,3,10837,ten,,Cash,Mumbai,completed
+O00925,18-09-2025,C0289,P203,Sony Headphones,electronics,1,abc,0,,,Kolkata,Completed
+O00926,27/08/2025,C0446,P206,HP Laptop,Home and Living,-1,38092,ten,,Credit Card,Kolkata,Returned
+O00927,2025-05-03,C0996,P202,Samsung TV,Fashon,2,9520,ten,,Debit Card,Lucknow,Completed
+O00928,17-07-2025,C0269,P207,Microwave Oven,Fashon,1,62150,0,,Credit Card,Hyderabad,completed
+O00929,20/06/2025,C0965,P202,Samsung TV,Electronic,-1,79277,,,UPI,Lucknow,completed
+O00930,2025/11/13,C0764,P209,Office Chair,Electronics,-1,37165,0,,,Hyderabad,Cancelled
+O00931,22/10/2025,C0727,,HP Laptop,Electronics,2,48040,0,,Debit Card,Lucknow,completed
+O00932,2025-12-20,C0075,,Refrigerator,Fashon,-1,38005,0.05,,Credit Card,Delhi,completed
+O00933,2025/09/13,C0313,P206,HP Laptop,Home & Living,1,79365,10%,,Cash,Lucknow,Completed
+O00934,2025/06/11,C0406,P210,Air Conditioner,Home and Living,3,abc,10%,,Cash,Kolkata,Completed
+O00935,02-11-2025,C0618,P202,Samsung TV,electronics,1,abc,0,,Credit Card,Jaipur,completed
+O00936,05/10/2025,C0772,P208,Refrigerator,Home & Living,2,78443,0.05,,,Mumbai,completed
+O00937,2025-11-25,C0854,P202,Samsung TV,Home and Living,1,45660,0.05,,UPI,Pune,completed
+O00938,2025-04-23,C0879,P201,iPhone 15,Home & Living,-1,46595,10%,,UPI,Jaipur,Completed
+O00939,04-06-2025,C0593,P206,HP Laptop,electronics,3,53676,0.05,,Cash, ,Returned
+O00940,14-02-2025,C0232,P201,iPhone 15,Home & Living,1,abc,10%,,Cash,Jaipur,completed
+O00941,2025-10-18,C0277,P209,Office Chair,Electronics,1,67173,0.1,,Debit Card, ,completed
+O00942,11/07/2025,C0271,P201,iPhone 15,Home and Living,1,abc,0.05,,Cash,Kolkata,Returned
+O00943,21/12/2025,,,HP Laptop,Electronic,2,abc,10%,,UPI,Kolkata,Cancelled
+O00944,2025/09/19,C0857,P205,Levi Jeans,Electronics,1,59753,5%,,Credit Card,Bangalore,Completed
+O00945,20-06-2025,C0575,P210,Air Conditioner,Fashon,1,12327,5%,,,Kolkata,completed
+O00946,01-08-2025,C0230,P202,Samsung TV,Home & Living,2,52080,ten,,Cash,Mumbai,completed
+O00947,2025/10/21,,P205,Levi Jeans,Electronic,1,48398,10%,,UPI, ,completed
+O00948,2025/05/17,C0431,P208,Refrigerator,electronics,2,4393,0.05,,,Bangalore,Completed
+O00949,2025-01-10,C0741,P208,Refrigerator,Home and Living,1,abc,0,,Credit Card,Bangalore,completed
+O00950,2025/11/28,C0958,P205,Levi Jeans,Electronics,2,63444,0.1,,UPI,Delhi,Returned
+O00951,2025-07-16,C0590,P205,Levi Jeans,Fashion,3,abc,,,Debit Card,Bangalore,Completed
+O00952,2025-06-26,C0546,P208,Refrigerator,Fashion,2,abc,10%,,Cash,Jaipur,completed
+O00953,2025/03/01,C0904,P204,Nike Shoes,Electronic,1,abc,0.1,,UPI,Mumbai,Returned
+O00954,2025/07/28,C0879,P206,HP Laptop,Fashion,3,36973,ten,,Credit Card,Hyderabad,Completed
+O00955,11-08-2025,C0103,P204,Nike Shoes,Fashion,3,abc,0,,Credit Card, ,Cancelled
+O00956,2025/05/25,C0107,P206,HP Laptop,Home & Living,2,abc,0,,,Mumbai,completed
+O00957,26-04-2025,C0916,P203,Sony Headphones,Fashion,2,50554,0.05,,Cash,Delhi,Completed
+O00958,2025/03/08,C0457,P205,Levi Jeans,Home and Living,-1,56178,10%,,UPI,Kolkata,Cancelled
+O00959,13/07/2025,C0708,P208,Refrigerator,Electronics,3,35167,ten,,Credit Card,Kolkata,Completed
+O00960,2025/07/11,C0882,P209,Office Chair,Fashon,-1,abc,0,,,Bangalore,completed
+O00961,2025/02/13,C0045,P205,Levi Jeans,Fashon,3,59337,0.1,,Cash,Pune,Returned
+O00962,02-04-2025,C0309,P202,Samsung TV,Fashon,2,14448,5%,,Cash,Delhi,Completed
+O00963,28/03/2025,C0532,P208,Refrigerator,Home and Living,1,1449,10%,,,Kolkata,Returned
+O00964,2025/03/05,C0294,P202,Samsung TV,Fashon,2,54982,5%,,UPI,Lucknow,Returned
+O00965,2025-08-14,C0804,P206,HP Laptop,Electronics,-1,79578,10%,,Credit Card,Kolkata,completed
+O00966,13/05/2025,C0345,P210,Air Conditioner,Electronics,1,abc,10%,,,Lucknow,Cancelled
+O00967,2025-10-03,C0600,P205,Levi Jeans,Electronics,1,abc,ten,,Credit Card,Jaipur,Cancelled
+O00968,03/02/2025,C0797,P210,Air Conditioner,Fashion,-1,14145,0.05,,Credit Card,Kolkata,completed
+O00969,04-12-2025,C0251,P208,Refrigerator,electronics,1,71293,0.1,,Cash,Bangalore,Cancelled
+O00970,2025/09/27,,P204,Nike Shoes,Electronic,2,abc,0.05,,,Pune,completed
+O00971,01-01-2025,C0581,P205,Levi Jeans,electronics,-1,23085,ten,,,Bangalore,completed
+O00972,2025-08-19,C0312,P205,Levi Jeans,Home and Living,3,abc,0,,Credit Card,Hyderabad,Cancelled
+O00973,16/12/2025,C0066,P210,Air Conditioner,Electronics,-1,16953,0.05,,UPI,Pune,Completed
+O00974,2025/02/06,C0626,P204,Nike Shoes,Electronic,3,22146,0.05,,,Kolkata,Completed
+O00975,2025/01/26,C0056,P201,iPhone 15,Fashon,3,abc,5%,,Cash,Lucknow,completed
+O00976,2025-03-23,C0145,P206,HP Laptop,electronics,3,abc,ten,,Debit Card,Kolkata,Completed
+O00977,2025-03-21,C0896,P204,Nike Shoes,Fashion,3,abc,10%,,UPI,Mumbai,Cancelled
+O00978,24-03-2025,C0140,P208,Refrigerator,Home & Living,2,abc,5%,,Credit Card,Chennai,Returned
+O00979,2025/01/07,C0209,P209,Office Chair,Electronics,1,abc,10%,,UPI,Bangalore,Completed
+O00980,2025-12-25,C0473,P209,Office Chair,Home & Living,3,abc,5%,,UPI, ,completed
+O00981,2025/04/14,C0403,P201,iPhone 15,electronics,3,abc,0.05,,UPI,Kolkata,Cancelled
+O00982,2025-09-02,C0542,P204,Nike Shoes,Fashion,3,abc,5%,,Cash,Mumbai,Completed
+O00983,2025/11/06,C0402,P204,Nike Shoes,electronics,3,abc,,,Cash,Delhi,completed
+O00984,2025/09/06,C0597,P202,Samsung TV,Electronic,3,abc,,,Debit Card,Bangalore,Completed
+O00985,22/02/2025,C0694,P209,Office Chair,Electronics,2,78470,5%,,Credit Card,Chennai,Returned
+O00986,2025/05/12,C0987,P204,Nike Shoes,electronics,1,5187,ten,,,Chennai,Cancelled
+O00987,2025-01-22,,P207,Microwave Oven,Home & Living,1,abc,10%,,,Mumbai,Returned
+O00988,2025/05/21,C0995,P202,Samsung TV,Electronics,1,abc,0.05,,UPI,Kolkata,Cancelled
+O00989,2025/11/15,C0945,P202,Samsung TV,Home and Living,1,73645,0.05,,UPI,Delhi,Completed
+O00990,28-04-2025,C0224,P204,Nike Shoes,Home and Living,-1,abc,ten,,Cash,Delhi,completed
+O00991,07/03/2025,C0268,P204,Nike Shoes,electronics,3,16181,0.05,,UPI,Pune,Completed
+O00992,2025-05-25,C0566,P209,Office Chair,Home & Living,3,abc,0.1,,Debit Card, ,Completed
+O00993,2025-08-15,C0266,P210,Air Conditioner,Electronics,2,14340,5%,,Debit Card, ,Completed
+O00994,2025/04/22,C0407,P203,Sony Headphones,Electronics,3,33279,,,,Pune,Cancelled
+O00995,06-08-2025,C0087,P207,Microwave Oven,Fashon,3,abc,0,,,Pune,Completed
+O00996,2025-09-18,C0957,P201,iPhone 15,Home and Living,3,abc,0.05,,Cash,Pune,Returned
+O00997,2025/02/16,C0380,P209,Office Chair,Home & Living,-1,42211,5%,,Debit Card, ,completed
+O00998,18-11-2025,,P208,Refrigerator,Electronics,-1,abc,ten,,Credit Card,Bangalore,Returned
+O00999,2025-10-26,C0912,P209,Office Chair,Fashon,2,59064,ten,,Cash,Pune,completed
+O01000,2025/01/09,C0849,,Office Chair,Home and Living,2,22591,0,,Debit Card,Lucknow,completed

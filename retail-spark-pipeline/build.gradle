@@ -1,0 +1,70 @@
+plugins {
+    id 'scala'
+    id 'application'
+}
+
+group = 'com.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+ext {
+    scalaBinaryVersion = '2.12'
+    scalaVersion = '2.12.18'
+    sparkVersion = '3.5.0'
+}
+
+dependencies {
+    // Scala Library
+    implementation "org.scala-lang:scala-library:${scalaVersion}"
+
+    // Apache Spark Core & SQL
+    implementation "org.apache.spark:spark-core_${scalaBinaryVersion}:${sparkVersion}"
+    implementation "org.apache.spark:spark-sql_${scalaBinaryVersion}:${sparkVersion}"
+
+    // Azure Blob Storage support (Hadoop Azure connector)
+    implementation 'org.apache.hadoop:hadoop-azure:3.3.4'
+
+    // PostgreSQL JDBC Driver
+    implementation 'org.postgresql:postgresql:42.6.0'
+
+    // ✅ Lightweight RabbitMQ Java Client (Safe for Spark without Spring dependency bloat)
+    implementation 'com.rabbitmq:amqp-client:5.20.0'
+}
+
+// Explicitly set Scala target bytecode compatibility to Java 17
+tasks.withType(ScalaCompile) {
+    scalaCompileOptions.additionalParameters = ["-target:jvm-17"]
+}
+
+application {
+    mainClass = 'com.example.spark.SparkPipelineApp'
+    applicationDefaultJvmArgs = [
+            "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED",
+            "--add-opens=java.base/java.lang=ALL-UNNAMED",
+            "--add-opens=java.base/java.util=ALL-UNNAMED",
+            "--add-opens=java.base/java.util.concurrent=ALL-UNNAMED",
+            "--add-opens=java.base/java.lang.invoke=ALL-UNNAMED",
+            "--add-opens=java.base/java.lang.reflect=ALL-UNNAMED",
+            "--add-opens=java.base/java.io=ALL-UNNAMED",
+            "--add-opens=java.base/java.net=ALL-UNNAMED"
+    ]
+}
+
+tasks.register('fatJar', Jar) {
+    archiveClassifier.set('all')
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from(sourceSets.main.output)
+    from({
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    })
+    exclude 'META-INF/*.SF', 'META-INF/*.DSA', 'META-INF/*.RSA'
+}
