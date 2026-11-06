@@ -1,0 +1,152 @@
+package com.example.spark.service
+
+import com.example.spark.messaging.RabbitMQPublisher
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.types._
+import org.apache.hadoop.fs.Path
+
+object PipelineExecutor {
+
+  def executeBronze(fileId: Long, targetFileName: String): Unit = {
+    println(s"⚙️ [SPARK BRONZE] Initializing SparkSession for File ID: $fileId, Target File: $targetFileName")
+    val spark = SparkSession.builder().appName(s"Retail-Bronze-Pipeline-$fileId").master("local[*]").getOrCreate()
+
+    val sc = spark.sparkContext
+    val storageAccountName = "filestorageaccount1997"
+    val accountKey = "JNwiedU79cBPdCsiLJSDnceDfqrUoRg5dwhoFdcq3y1/NFeDAKHAGdrq9TRzITZbTyjdj/DTgs3q+AStFpT10A=="
+    sc.hadoopConfiguration.set(s"fs.azure.account.key.$storageAccountName.blob.core.windows.net", accountKey)
+
+    val containerName = "files-artifact-container"
+    val baseUrl = s"wasbs://$containerName@$storageAccountName.blob.core.windows.net"
+    var success = true
+    val trimmedFileName = targetFileName.trim
+
+    try {
+      val rootPath = new Path(baseUrl + "/")
+      val fs = rootPath.getFileSystem(sc.hadoopConfiguration)
+      var exactFilePath: String = null
+
+      if (fs.exists(rootPath)) {
+        fs.listStatus(rootPath).find(s => s.getPath.getName.endsWith(trimmedFileName)).foreach { matched =>
+          exactFilePath = matched.getPath.toString
+        }
+      }
+
+      if (exactFilePath == null) throw new java.io.FileNotFoundException(s"Blob ending with '$trimmedFileName' not found.")
+
+      val rawDf = spark.read.option("header", "true").option("inferSchema", "false").csv(exactFilePath)
+      val bronzeDf = rawDf
+        .withColumn("_ingestion_timestamp", current_timestamp())
+        .withColumn("_source_file", lit(trimmedFileName))
+
+      val dataSetName = if (trimmedFileName.contains("customer")) "customers" else "orders"
+      val bronzeOutputPath = s"./bronze_output/$dataSetName"
+
+      bronzeDf.write.mode("overwrite").parquet(bronzeOutputPath)
+      println(s"✅ [BRONZE] Saved Parquet dataset to: $bronzeOutputPath")
+    } catch {
+      case e: Exception =>
+        success = false
+        println(s"❌ [BRONZE ERROR]: ${e.getMessage}")
+        e.printStackTrace()
+    } finally {
+      spark.stop()
+    }
+
+    if (success) {
+      RabbitMQPublisher.publishEvent("retail.bronze.completed.exchange", "bronze.completed", fileId, targetFileName, baseUrl, "BRONZE")
+    }
+  }
+
+  def executeSilver(fileId: Long, targetFileName: String): Unit = {
+    println(s"⚙️ [SPARK SILVER] Initializing Silver Cleansing SparkSession for File ID: $fileId")
+    val spark = SparkSession.builder().appName(s"Retail-Silver-Pipeline-$fileId").master("local[*]").getOrCreate()
+
+    var success = true
+    val trimmedFileName = targetFileName.trim
+    val isCustomer = trimmedFileName.contains("customer")
+    val dataSetName = if (isCustomer) "customers" else "orders"
+    val inputPath = s"./bronze_output/$dataSetName"
+    val silverOutputPath = s"./silver_output/$dataSetName/$fileId"
+
+    try {
+      val bronzeDf = spark.read.parquet(inputPath)
+      var cleanedDf = bronzeDf
+
+      if (isCustomer) {
+        cleanedDf = cleanedDf
+          .na.replace("phone", Map("not_available" -> null))
+          .na.replace("email", Map("not_available" -> null))
+          .withColumn("gender",
+            when(upper(col("gender")).isin("M", "MALE"), "Male")
+              .when(upper(col("gender")).isin("F", "FEMALE"), "Female")
+              .otherwise(lit(null)))
+          .withColumn("status", initcap(trim(col("status"))))
+          .withColumn("loyalty_points",
+            when(col("loyalty_points") === "ten", lit(10))
+              .otherwise(col("loyalty_points").cast(IntegerType))
+          )
+      } else {
+        cleanedDf = cleanedDf
+          .withColumn("quantity", when(col("quantity") === "abc" || col("quantity").isNull, lit(0)).otherwise(col("quantity").cast(IntegerType)))
+          .withColumn("unit_price", when(col("unit_price") === "abc" || col("unit_price").isNull, lit(0.0)).otherwise(col("unit_price").cast(DoubleType)))
+          .withColumn("order_status", initcap(trim(col("order_status"))))
+          .withColumn("payment_method", initcap(trim(col("payment_method"))))
+          .withColumn("quantity", abs(col("quantity")))
+      }
+
+      val finalDf = cleanedDf.withColumn("_silver_processed_timestamp", current_timestamp())
+      finalDf.write.mode("overwrite").parquet(silverOutputPath)
+      println(s"✅ [SILVER COMPLETE] Written to $silverOutputPath")
+    } catch {
+      case e: Exception =>
+        success = false
+        println(s"❌ [SILVER ERROR]: ${e.getMessage}")
+        e.printStackTrace()
+    } finally {
+      spark.stop()
+    }
+
+    if (success) {
+      RabbitMQPublisher.publishEvent("retail.silver.completed.exchange", "silver.completed", fileId, targetFileName, "wasbs://files-artifact-container@filestorageaccount1997.blob.core.windows.net/", "SILVER")
+    }
+  }
+
+  def executeGold(fileId: Long, targetFileName: String): Unit = {
+    println(s"⚙️ [SPARK GOLD] Initializing Gold Aggregation SparkSession for File ID: $fileId")
+    val spark = SparkSession.builder().appName(s"Retail-Gold-Pipeline-$fileId").master("local[*]").getOrCreate()
+
+    var success = true
+    val goldOutputPath = s"./gold_output/retail_summary_mart"
+
+    try {
+      val customersDf = spark.read.parquet("./silver_output/customers/*/*")
+      val ordersDf = spark.read.parquet("./silver_output/orders/*/*")
+
+      val enrichedOrders = ordersDf.join(customersDf, "customer_id")
+      val customerSummaryDf = enrichedOrders
+        .groupBy("customer_id", "customer_name", "city", "state")
+        .agg(
+          count("order_id").as("total_orders"),
+          sum("unit_price").as("total_spend"),
+          avg("unit_price").as("avg_order_value")
+        )
+        .withColumn("_gold_processed_timestamp", current_timestamp())
+
+      customerSummaryDf.write.mode("overwrite").parquet(goldOutputPath)
+      println(s"✅ [GOLD COMPLETE] Successfully generated retail analytical gold mart.")
+    } catch {
+      case e: Exception =>
+        success = false
+        println(s"❌ [GOLD ERROR]: ${e.getMessage}")
+        e.printStackTrace()
+    } finally {
+      spark.stop()
+    }
+
+    if (success) {
+      RabbitMQPublisher.publishEvent("retail.gold.completed.exchange", "gold.completed", fileId, targetFileName, "wasbs://files-artifact-container@filestorageaccount1997.blob.core.windows.net/", "GOLD")
+    }
+  }
+}
