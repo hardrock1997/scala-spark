@@ -17,7 +17,7 @@ spring:
 
   cloud:
     function:
-      definition: fileIngestedConsumer;bronzeCompletedConsumer;silverCompletedConsumer
+      definition: fileIngestedConsumer;bronzeCompletedConsumer;silverCompletedConsumer;goldCompletedConsumer
     stream:
       bindings:
         fileIngestedConsumer-in-0:
@@ -29,6 +29,9 @@ spring:
         silverCompletedConsumer-in-0:
           destination: retail.silver.completed.exchange
           group: orchestrator-silver-group
+        goldCompletedConsumer-in-0:
+          destination: retail.gold.completed.exchange
+          group: orchestrator-gold-group
 
         bronzeTriggerOut-out-0:
           destination: retail.bronze.trigger.exchange

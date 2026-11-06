@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fileIngestionService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fileIngestionService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/retail-pipeline-orchestrator.main.iml" filepath="$PROJECT_DIR$/.idea/modules/retail-pipeline-orchestrator.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/scala&amp;spark.iml" filepath="$PROJECT_DIR$/.idea/scala&amp;spark.iml" />
     </modules>
   </component>

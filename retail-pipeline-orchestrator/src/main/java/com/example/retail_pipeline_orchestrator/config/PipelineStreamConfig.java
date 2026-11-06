@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Configuration;
 import java.time.LocalDateTime;
 import java.util.function.Consumer;
 
-
 @Slf4j
 @Configuration
 @RequiredArgsConstructor
@@ -29,16 +28,19 @@ public class PipelineStreamConfig {
 
                 orchestratorService.updateFileStatus(event.getId(), "BRONZE_PROCESSING");
 
-                // 🚀 Automatically launch Spark via ProcessBuilder, passing ID and Filename
-                String sparkArg = event.getId() + "," + event.getFileName();
-                log.info("🚀 [ORCHESTRATOR] Launching Spark Bronze Pipeline for: {}", sparkArg);
+                PipelineStageEvent stageEvent = PipelineStageEvent.builder()
+                        .id(event.getId())
+                        .fileName(event.getFileName())
+                        .blobUrl(event.getBlobUrl())
+                        .currentStage("BRONZE_PROCESSING")
+                        .timestamp(LocalDateTime.now())
+                        .build();
 
-                ProcessBuilder processBuilder = new ProcessBuilder("./gradlew", "run", "--args=" + sparkArg);
-                processBuilder.inheritIO(); // Pipes Spark logs directly into your Spring Boot console
-                processBuilder.start();
+                log.info("🚀 [ORCHESTRATOR] Publishing trigger to bronzeTriggerOut-out-0 for ID: {}", event.getId());
+                streamBridge.send("bronzeTriggerOut-out-0", stageEvent);
 
             } catch (Exception e) {
-                log.error("❌ [ERROR] Failed to launch Spark for ID: {}. Reason: {}", event.getId(), e.getMessage(), e);
+                log.error("❌ [ERROR] Failed in fileIngestedConsumer for ID: {}. Reason: {}", event.getId(), e.getMessage(), e);
             }
         };
     }
@@ -48,8 +50,20 @@ public class PipelineStreamConfig {
         return event -> {
             try {
                 log.info("✅ [CONSUMER] bronzeCompletedConsumer triggered. ID: {}, CurrentStage: {}", event.getId(), event.getCurrentStage());
+
                 orchestratorService.updateFileStatus(event.getId(), "SILVER_PROCESSING");
-                // TODO: Trigger Silver Layer processing here
+
+                PipelineStageEvent stageEvent = PipelineStageEvent.builder()
+                        .id(event.getId())
+                        .fileName(event.getFileName())
+                        .blobUrl(event.getBlobUrl())
+                        .currentStage("SILVER_PROCESSING")
+                        .timestamp(LocalDateTime.now())
+                        .build();
+
+                log.info("🥈 [ORCHESTRATOR] Publishing trigger to silverTriggerOut-out-0 for ID: {}", event.getId());
+                streamBridge.send("silverTriggerOut-out-0", stageEvent);
+
             } catch (Exception e) {
                 log.error("❌ [ERROR] Failed bronzeCompletedConsumer: {}", e.getMessage(), e);
             }
@@ -61,9 +75,39 @@ public class PipelineStreamConfig {
         return event -> {
             try {
                 log.info("✅ [CONSUMER] silverCompletedConsumer triggered. ID: {}", event.getId());
+
                 orchestratorService.updateFileStatus(event.getId(), "GOLD_PROCESSING");
+
+                PipelineStageEvent stageEvent = PipelineStageEvent.builder()
+                        .id(event.getId())
+                        .fileName(event.getFileName())
+                        .blobUrl(event.getBlobUrl())
+                        .currentStage("GOLD_PROCESSING")
+                        .timestamp(LocalDateTime.now())
+                        .build();
+
+                log.info("🥇 [ORCHESTRATOR] Publishing trigger to goldTriggerOut-out-0 for ID: {}", event.getId());
+                streamBridge.send("goldTriggerOut-out-0", stageEvent);
+
             } catch (Exception e) {
                 log.error("❌ [ERROR] Failed silverCompletedConsumer: {}", e.getMessage(), e);
+            }
+        };
+    }
+
+    @Bean
+    public Consumer<PipelineStageEvent> goldCompletedConsumer() {
+        return event -> {
+            try {
+                log.info("✅ [CONSUMER] goldCompletedConsumer triggered. ID: {}, CurrentStage: {}", event.getId(), event.getCurrentStage());
+
+                // Finalize database status to COMPLETED
+                orchestratorService.updateFileStatus(event.getId(), "COMPLETED");
+
+                log.info("🎉 [ORCHESTRATOR] Pipeline successfully completed for File ID: {}", event.getId());
+
+            } catch (Exception e) {
+                log.error("❌ [ERROR] Failed goldCompletedConsumer for ID: {}. Reason: {}", event.getId(), e.getMessage(), e);
             }
         };
     }

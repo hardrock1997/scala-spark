@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
-      <module name="fileIngestionService" target="17" />
-      <module name="fileIngestionService.main" target="17" />
-      <module name="fileIngestionService.test" target="17" />
-    </bytecodeTargetLevel>
-  </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="fileIngestionService" options="-parameters" />
       <module name="fileIngestionService.main" options="-parameters" />
       <module name="fileIngestionService.test" options="-parameters" />
+      <module name="retail-pipeline-orchestrator" options="-parameters" />
+      <module name="retail-pipeline-orchestrator.main" options="-parameters" />
+      <module name="retail-pipeline-orchestrator.test" options="-parameters" />
     </option>
   </component>
 </project>
