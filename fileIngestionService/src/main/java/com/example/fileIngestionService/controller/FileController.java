@@ -71,59 +71,6 @@ public class FileController {
         }
     }
 
-
-//    @PostMapping("/upload-batch")
-//    public ResponseEntity<List<FileMetadataResponseDto>> uploadBatchFiles(@RequestParam("files") MultipartFile[] files) {
-//        List<FileMetadataResponseDto> responseDtos = new ArrayList<>();
-//
-//        for (MultipartFile file : files) {
-//            try {
-//                // 1. Upload each file to Azure Blob Storage container
-//                String blobUrl = azureStorageService.uploadFile(file);
-//
-//                // 2. Persist tracking metadata for each file into PostgreSQL
-//                FileMetadata metadata = new FileMetadata();
-//                metadata.setFileName(file.getOriginalFilename());
-//                metadata.setBlobUrl(blobUrl);
-//                metadata.setStatus("PENDING");
-//                metadata.setUploadedAt(LocalDateTime.now());
-//
-//                FileMetadata savedMetadata = fileMetadataRepository.save(metadata);
-//
-//                // 3. Publish individual event to Spring Cloud Stream / RabbitMQ
-//                FileIngestedEvent event = FileIngestedEvent.builder()
-//                        .id(savedMetadata.getId())
-//                        .fileName(savedMetadata.getFileName())
-//                        .blobUrl(savedMetadata.getBlobUrl())
-//                        .status(savedMetadata.getStatus())
-//                        .uploadedAt(savedMetadata.getUploadedAt())
-//                        .build();
-//
-//                streamBridge.send("fileIngestionOut-out-0", event);
-//
-//                log.info("📁 [BATCH INGESTION] Successfully processed file: ID={}, Name={}", savedMetadata.getId(), savedMetadata.getFileName());
-//
-//                // 4. Map to DTO and collect
-//                FileMetadataResponseDto responseDto = FileMetadataResponseDto.builder()
-//                        .id(savedMetadata.getId())
-//                        .fileName(savedMetadata.getFileName())
-//                        .blobUrl(savedMetadata.getBlobUrl())
-//                        .status(savedMetadata.getStatus())
-//                        .uploadedAt(savedMetadata.getUploadedAt())
-//                        .build();
-//
-//                responseDtos.add(responseDto);
-//
-//            } catch (Exception e) {
-//                log.error("❌ [BATCH ERROR] Failed processing file {}: {}", file.getOriginalFilename(), e.getMessage());
-//                // Continue processing remaining files in the batch instead of aborting entirely
-//            }
-//        }
-//
-//        return ResponseEntity.ok(responseDtos);
-//    }
-
-
     @PostMapping("/upload-batch")
     public ResponseEntity<List<FileMetadataResponseDto>> uploadBatchFiles(@RequestParam("files") List<MultipartFile> files) {
         List<FileMetadataResponseDto> responseDtos = new ArrayList<>();

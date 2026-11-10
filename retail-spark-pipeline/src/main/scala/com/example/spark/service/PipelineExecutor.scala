@@ -8,23 +8,38 @@ import org.apache.hadoop.fs.Path
 
 object PipelineExecutor {
 
+  // 1. Initialize the SparkSession ONCE as a shared singleton for the application lifetime
+  private val storageAccountName = "filestorageaccount1997"
+  private val accountKey = "JNwiedU79cBPdCsiLJSDnceDfqrUoRg5dwhoFdcq3y1/NFeDAKHAGdrq9TRzITZbTyjdj/DTgs3q+AStFpT10A=="
+  private val containerName = "files-artifact-container"
+  val baseUrl: String = s"wasbs://$containerName@$storageAccountName.blob.core.windows.net"
+
+  val spark: SparkSession = {
+    println("⚙️ [SPARK SESSION] Initializing global shared SparkSession...")
+    val session = SparkSession.builder()
+      .appName("Retail-Pipeline-Master")
+      .master("local[*]")
+      .config("spark.driver.bindAddress", "127.0.0.1") // <--- Forces IPv4 binding
+      .config("spark.driver.host", "127.0.0.1")
+      .getOrCreate()
+
+    // Configure Hadoop Azure storage credentials globally on the shared Spark Context
+    session.sparkContext.hadoopConfiguration.set(
+      s"fs.azure.account.key.$storageAccountName.blob.core.windows.net",
+      accountKey
+    )
+
+    session
+  }
+
   def executeBronze(fileId: Long, targetFileName: String): Unit = {
-    println(s"⚙️ [SPARK BRONZE] Initializing SparkSession for File ID: $fileId, Target File: $targetFileName")
-    val spark = SparkSession.builder().appName(s"Retail-Bronze-Pipeline-$fileId").master("local[*]").getOrCreate()
-
-    val sc = spark.sparkContext
-    val storageAccountName = "filestorageaccount1997"
-    val accountKey = "JNwiedU79cBPdCsiLJSDnceDfqrUoRg5dwhoFdcq3y1/NFeDAKHAGdrq9TRzITZbTyjdj/DTgs3q+AStFpT10A=="
-    sc.hadoopConfiguration.set(s"fs.azure.account.key.$storageAccountName.blob.core.windows.net", accountKey)
-
-    val containerName = "files-artifact-container"
-    val baseUrl = s"wasbs://$containerName@$storageAccountName.blob.core.windows.net"
+    println(s"⚙️ [SPARK BRONZE] Processing File ID: $fileId, Target File: $targetFileName")
     var success = true
     val trimmedFileName = targetFileName.trim
 
     try {
       val rootPath = new Path(baseUrl + "/")
-      val fs = rootPath.getFileSystem(sc.hadoopConfiguration)
+      val fs = rootPath.getFileSystem(spark.sparkContext.hadoopConfiguration)
       var exactFilePath: String = null
 
       if (fs.exists(rootPath)) {
@@ -40,18 +55,26 @@ object PipelineExecutor {
         .withColumn("_ingestion_timestamp", current_timestamp())
         .withColumn("_source_file", lit(trimmedFileName))
 
+      println("--- BRONZE DF PREVIEW ---")
+
+      bronzeDf.show(5, truncate = false)
+
       val dataSetName = if (trimmedFileName.contains("customer")) "customers" else "orders"
       val bronzeOutputPath = s"./bronze_output/$dataSetName"
+      val bronzeCsvPath = s"./bronze_output/csv/$dataSetName"
 
       bronzeDf.write.mode("overwrite").parquet(bronzeOutputPath)
+      bronzeDf.write
+        .mode("overwrite")
+        .option("header", "true") // Ensures column names are written to the CSV
+        .csv(bronzeCsvPath)
+
       println(s"✅ [BRONZE] Saved Parquet dataset to: $bronzeOutputPath")
     } catch {
       case e: Exception =>
         success = false
         println(s"❌ [BRONZE ERROR]: ${e.getMessage}")
         e.printStackTrace()
-    } finally {
-      spark.stop()
     }
 
     if (success) {
@@ -60,15 +83,14 @@ object PipelineExecutor {
   }
 
   def executeSilver(fileId: Long, targetFileName: String): Unit = {
-    println(s"⚙️ [SPARK SILVER] Initializing Silver Cleansing SparkSession for File ID: $fileId")
-    val spark = SparkSession.builder().appName(s"Retail-Silver-Pipeline-$fileId").master("local[*]").getOrCreate()
-
+    println(s"⚙️ [SPARK SILVER] Processing Silver Cleansing for File ID: $fileId")
     var success = true
     val trimmedFileName = targetFileName.trim
     val isCustomer = trimmedFileName.contains("customer")
     val dataSetName = if (isCustomer) "customers" else "orders"
     val inputPath = s"./bronze_output/$dataSetName"
     val silverOutputPath = s"./silver_output/$dataSetName/$fileId"
+    val silverCsvPath = s"./silver_output/csv/$dataSetName/$fileId"
 
     try {
       val bronzeDf = spark.read.parquet(inputPath)
@@ -98,27 +120,29 @@ object PipelineExecutor {
 
       val finalDf = cleanedDf.withColumn("_silver_processed_timestamp", current_timestamp())
       finalDf.write.mode("overwrite").parquet(silverOutputPath)
+      finalDf.write
+        .mode("overwrite")
+        .option("header", "true") // Ensures column names are written to the CSV
+        .csv(silverCsvPath)
       println(s"✅ [SILVER COMPLETE] Written to $silverOutputPath")
     } catch {
       case e: Exception =>
         success = false
         println(s"❌ [SILVER ERROR]: ${e.getMessage}")
         e.printStackTrace()
-    } finally {
-      spark.stop()
     }
 
     if (success) {
-      RabbitMQPublisher.publishEvent("retail.silver.completed.exchange", "silver.completed", fileId, targetFileName, "wasbs://files-artifact-container@filestorageaccount1997.blob.core.windows.net/", "SILVER")
+      RabbitMQPublisher.publishEvent("retail.silver.completed.exchange", "silver.completed", fileId, targetFileName, baseUrl, "SILVER")
     }
   }
 
   def executeGold(fileId: Long, targetFileName: String): Unit = {
-    println(s"⚙️ [SPARK GOLD] Initializing Gold Aggregation SparkSession for File ID: $fileId")
-    val spark = SparkSession.builder().appName(s"Retail-Gold-Pipeline-$fileId").master("local[*]").getOrCreate()
-
+    println(s"⚙️ [SPARK GOLD] Processing Gold Aggregation for File ID: $fileId")
     var success = true
     val goldOutputPath = s"./gold_output/retail_summary_mart"
+    val goldCsvPath = s"./gold_output/csv/retail_summary_mart"
+
 
     try {
       val customersDf = spark.read.parquet("./silver_output/customers/*/*")
@@ -135,18 +159,20 @@ object PipelineExecutor {
         .withColumn("_gold_processed_timestamp", current_timestamp())
 
       customerSummaryDf.write.mode("overwrite").parquet(goldOutputPath)
+      customerSummaryDf.write
+        .mode("overwrite")
+        .option("header", "true") // Ensures column names are written to the CSV
+        .csv(goldCsvPath)
       println(s"✅ [GOLD COMPLETE] Successfully generated retail analytical gold mart.")
     } catch {
       case e: Exception =>
         success = false
         println(s"❌ [GOLD ERROR]: ${e.getMessage}")
         e.printStackTrace()
-    } finally {
-      spark.stop()
     }
 
     if (success) {
-      RabbitMQPublisher.publishEvent("retail.gold.completed.exchange", "gold.completed", fileId, targetFileName, "wasbs://files-artifact-container@filestorageaccount1997.blob.core.windows.net/", "GOLD")
+      RabbitMQPublisher.publishEvent("retail.gold.completed.exchange", "gold.completed", fileId, targetFileName, baseUrl, "GOLD")
     }
   }
 }
